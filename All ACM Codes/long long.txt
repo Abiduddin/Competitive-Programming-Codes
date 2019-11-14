@@ -1,4 +1,0 @@
-
-long long	8	none (but equivalent to __int64)	–9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
-
-unsigned long long      8	none (but equivalent to unsigned __int64)	0 to 18,446,744,073,709,551,615
