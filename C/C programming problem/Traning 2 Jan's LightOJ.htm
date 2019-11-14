@@ -1,0 +1,1641 @@
+<html><head>
+		<title>Jan's LightOJ</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="Traning%202%20Jan%27s%20LightOJ_files/style.css">
+	</head>
+
+	<body lang="EN-US">
+<style>
+div.tempMessage {
+  float: left;
+  font-size: 30;
+  margin-top: 10px;
+  margin-left: 300px;
+  position: absolute;
+  border: 2px solid white;
+  background: yellow;
+  border-radius: 5px;
+  padding: 2px;
+}
+div.tempMessage a {
+  text-decoration: underline;
+  color: red;
+}
+</style>
+<div class="topDiv">
+			<img src="Traning%202%20Jan%27s%20LightOJ_files/main.png" class="topImage" style="float: left;">
+                <!--<div class="tempMessage"><a href="http://lightoj.com/lightojv2/contest/215/problems" target=_blank>ACM ICPC Dhaka Regionals Online Preliminary Contest is scheduled here.</a></div>!-->
+			<div class="topMenuMessage" style="display: block; float: right; padding: 50 5 0 0;">
+				Server Time:
+				<a class="top_link" target="_blank" href="http://www.timeanddate.com/worldclock/fixedtime.html?iso=20150918T024759">
+					Fri Sep 18, 2015 8:47 am				</a>
+			</div>
+		</div>
+		<div class="topMenu" align="center">
+			<table width="100%">
+				<tbody><tr>
+					<td width="10%">
+						<div class="topMenuMessage">
+							&nbsp;<a class="top_link" href="http://lightoj.com/index.php">
+								Home
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/volume_problemset.php">
+								Volume
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/contest_index.php">
+								Contest
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/article_showcategory.php">Training</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/forum_index.php">Community</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/credits_index.php">Credits</a>
+						</div>
+					</td>
+					<td align="right" width="60%">
+						<div class="topMenuMessage">
+							Welcome
+								<a class="top_link" href="http://lightoj.com/index_edituser.php">
+									md. abid								</a>
+							(<a class="top_link" href="http://lightoj.com/login_logout.php">
+								logout
+							</a>)&nbsp;
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div id="wrapper">
+			<div id="problem">
+				<div id="problem_name">
+					Longest Increasing Subsequence				</div>
+				<div style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;" align="center">
+					<table id="mytable" style="width:110;padding: 5 0 5 0;" cellspacing="0">
+						<tbody><tr><td class="two" style="border-top: 1px solid #C1DAD7;border-left: 1px solid #C1DAD7;" width="100">
+							<a class="user_link" href="http://lightoj.com/article_show.php?article=1000&amp;language=english&amp;type=pdf">
+								PDF (English)							</a>
+						</td>
+					</tr></tbody></table>
+				</div>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Generator" content="Microsoft Word 12 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:Consolas;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:#1F497D;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:Consolas;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman","serif";
+	color:#1F497D;
+	font-weight:bold;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+
+
+
+
+<div class="Section1">
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Introduction</h1>
+
+</div>
+
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">LIS
+abbreviated as 'Longest Increasing Subsequence', consists of three parts.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Longest</span></i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+- stands for its own meaning.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Increasing</span></i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+- means that it must be an increasing something, for example [1, 2, 3, 7, 20]
+is an increasing sequence but [1, 4, 2, 5] is definitely not an increasing
+sequence because we have 2 after 4. Formally, a sequence [<i>a<sub>1</sub>, a<sub>2</sub>
+... a<sub>n</sub></i>] is increasing if <i>a<sub>1</sub> &lt; a<sub>2</sub>
+&lt; a<sub>3</sub> &lt; ... &lt; a<sub>n</sub></i>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Subsequence</span></i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+- means a new sequence consisting of some numbers from the original sequence
+but the numbers maintain the relative ordering. For example if the sequence is
+[1, 5, 2, 7, 3] then [2, 7, 3], [1, 5, 3] and [1, 2, 7] etc are valid subsequences
+but [1, 3, 5] is not. Cause in the original sequence 3 is listed after 5. Formally,
+if [<i>a<sub>1</sub>, a<sub>2</sub> ... a<sub>n</sub></i>] is a sequence then [<i>a<sub>i</sub>,
+a<sub>j</sub> ... a<sub>z</sub></i>] will be a subsequence of the given sequence
+if <i>i &lt; j &lt; ... &lt; z</i>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+we are given a sequence, we have to find the increasing subsequence which is
+longest, that means the subsequence which is increasing and contains maximum
+numbers.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">For
+example a sequence is given - [8, 1, 9, 8, 3, 4, 6, 1, 5, 2]. Now some
+increasing subsequences are [8, 9], [1, 9], [1, 8], [1, 3, 4, 6], [1, 3, 4, 5],
+[1, 2], [9], [8], [3, 4, 6], [3, 4, 5], [4, 6], [4, 5], [6], [1, 5], [1, 2],
+[5], [1]. Amongst them all [1, 3, 4, 6] and [1, 3, 4, 5] both are longest.</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>An O(n<sup>2</sup>) approach</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">This
+idea is relatively easy. For this problem we create another array where the ith
+item contains the longest increasing subsequence found from the first item to
+the ith item, and which included the ith item. Let the array be L[]. L[i] will
+contain the increasing subsequence length which includes the ith item.</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+we take any item from the sequence, it's a valid increasing subsequence, but it
+may not be longest. So, initially we say that all the values in L[] are 1.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, 3, 4,
+6, 1, 5, 2]</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 1, 1, 1, 1, 1, 1, 1, 1, 2]</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+we start from the leftmost item which is 8. Now we try to find all the numbers which
+are greater than 8 and which lie after this 8. The only item we can find is 9.
+Since the L[] value of 8 is 1, so, we can make a subsequence [8, 9] so, we will
+update the L[] value of 9 as 2. Note that we will not update the next 8 because
+[8, 8] is not increasing.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[<span style="color:#00B050">8</span>, 1, <span style="color:red">9</span>, 8, 3, 4,
+6, 1, 5, 2]</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>,
+1, <span style="color:red">2</span>, 1, 1, 1, 1, 1, 1, 2]</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+the next item is 1 and the L[] value is also 1. The items which are in right
+and greater than 1 are 9, 8, 3, 4, 6, 5, and 2. So, definitely we can make
+sequences [1, 9], [1, 8], [1, 3], [1, 4], [1, 6], [1, 5] and [1, 2]. So, their
+L[] value will be 2. Note that the L[] value of 9 is already 2, so we don't
+need to update it again.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, <span style="color:#00B050">1</span>, 9, <span style="color:red">8</span>, <span style="color:red">3</span>, <span style="color:red">4</span>, <span style="color:red">6</span>, 1, <span style="color:red">5</span>, <span style="color:red">2</span>]</span></p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1,
+<span style="color:#00B050">1</span>, 2, <span style="color:red">2</span>, <span style="color:red">2</span>, <span style="color:red">2</span>, <span style="color:red">2</span>, 1, <span style="color:red">2</span>, <span style="color:red">2</span>]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+next item is 9 and the L[] value is 2. Since no item in right side is greater
+than 9, so L[] will remain same.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we have 8 whose L[] value is 2. Again no item is found to update.</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">6)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+there is 3 whose L[] value is 2. The items which are greater than 3 and lie in
+right are 4, 6 and 5. Now observe that since the L[] value of 3 is 2, that
+means if we take 3 we can somehow make e subsequence which contains 3 and whose
+length is 2. And now we have an item which is greater than 3. So, obviously
+their L[] value will be 3.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, <span style="color:#00B050">3</span>, <span style="color:red">4</span>, <span style="color:red">6</span>, 1, <span style="color:red">5</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1,
+1, 2, 2, <span style="color:#00B050">2</span>, <span style="color:red">3</span>,
+<span style="color:red">3</span>, 1, <span style="color:red">3</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">7)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+next item is 4 whose L[] value is 3, that means we can form a subsequence with
+4 which contains 3 numbers. The numbers which are greater than 4 and lie in
+right of 4 are 6 and 5. So, L[] value of them will be 4.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, 3, <span style="color:#00B050">4</span>, <span style="color:red">6</span>, 1, <span style="color:red">5</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1,
+1, 2, 2, 2, <span style="color:#00B050">3</span>, <span style="color:red">4</span>,
+1, <span style="color:red">4</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">8)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+next item is 6 but there is no item in right which is greater than 6.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">9)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+next item is 1 whose L[] value is 1. The item which is greater than 1 and in
+right is 5. Now watch that the L[] value of 5 is already 4, but if we add 5
+after 1 then the L[] value of 5 will be 2. So, we will keep 4 since its better.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">10)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+next item is 5 but there is no item in right which is greater than 5.</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">11)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">And
+finally we have 2 and we don't have to update. So, finally</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, 3, 4,
+6, 1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1,
+1, 2, 2, 2, 3, 4, 1, 4, 2]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">12)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we iterate through the L[] and find the maximum element, which is the result.
+So, for the given sequence the result is 4.</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">See the code which finds the length of LIS.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> n; <span style="color:green">// the number
+of items in the sequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> Sequence[32]; <span style="color:green">//
+the sequence of integers</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> L[32]; <span style="color:green">// L[] as
+described in the algorithm</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">void</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> takeInput() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;scanf(<span style="color:#A31515">"%d"</span>,
+&amp;n); <span style="color:green">// how many numbers in the sequence ?</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// take the
+sequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( <span style="color:blue">int</span> i = 0; i &lt; n; i++ )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(<span style="color:#A31515">"%d"</span>,
+&amp;Sequence[i]);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> LIS() { <span style="color:green">// which
+runs the LIS algorithm and returns the result</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span> i, j;
+<span style="color:green">// auxilary variables for iteration</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// initialize
+L[] with 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( i =
+0; i &lt; n; i++ )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L[i] = 1;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// start from
+the left most item and itetare right</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( i =
+0; i &lt; n; i++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// for the
+ith item item find all items that are in right</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>(
+j = i + 1; j &lt; n; j++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">if</span>(
+Sequence[j] &gt; Sequence[i] ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">//
+the item is greater than the ith item</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">//
+so, L[j] = L[i] + 1, since jth item can be added after ith</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">//
+item. if L[j] is already greater than or equal to L[i] + 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">//
+then ignore it</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">if</span>(
+L[j] &lt; L[i] + 1 )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L[j]
+ = L[i] + 1;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// now find the
+item whose L[] value is maximum</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+maxLength = 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( i =
+0; i &lt; n; i++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">if</span>(
+maxLength &lt; L[i]&nbsp;&nbsp;)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxLength = L[i];</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// return the
+result</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">return</span>
+maxLength;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;takeInput();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+result = LIS();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;printf(<span style="color:#A31515">"The
+LIS length is %d\n"</span>, result);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Reconstructing a Longest Increasing Subsequence</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+you may want to reconstruct one of the longest increasing subsequences. The
+technique is quite easy.</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Find
+an item whose L[] value is maximum. Let 5 be the item.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in"><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, 3, 4, 6, 1, <span style="color:red">5</span>,
+2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 1, 2, 2, 2, 3, 4, 1, <span style="color:red">4</span>,
+2]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+iterate to left and find an item which is less than 5 and whose L[] value is one
+less that means 3. So, we have 4 whose L[] value is 3 and 4 &lt; 5.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in"><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, 3, <span style="color:#00B050">4</span>, 6,
+1, <span style="color:red">5</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 1, 2, 2, 2, <span style="color:#00B050">3</span>, 4,
+1, <span style="color:red">4</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Again
+iterate left for the next item which is less than 4 and whose L[] value is 2.
+WE have 3.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in"><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, <span style="color:#00B0F0">3</span>, <span style="color:#00B050">4</span>, 6, 1, <span style="color:red">5</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 1, 2, 2, <span style="color:#00B0F0">2</span>, <span style="color:#00B050">3</span>, 4, 1, <span style="color:red">4</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Iterate
+left for an item which is less than 3 and whose L[] value is 1, which is 1.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in"><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, <span style="color:#C00000">1</span>, 9, 8, <span style="color:#00B0F0">3</span>, <span style="color:#00B050">4</span>, 6, 1, <span style="color:red">5</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, <span style="color:#C00000">1</span>, 2, 2, <span style="color:#00B0F0">2</span>, <span style="color:#00B050">3</span>, 4, 1, <span style="color:red">4</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">5)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Since
+we have got a L[] value with 1 so, we can stop or we may continue but we will
+get none. So, a longest increasing subsequence is [1, 3, 4, 5].</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+we have chosen 6 we would get [1, 3, 4, 6] as the longest increasing
+subsequence which is valid, too.</span></p>
+
+<span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">The following code finds a longest increasing
+subsequence.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> LisSequence[32]; <span style="color:green">//
+for storing the sequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">void</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> findSequence( <span style="color:blue">int</span>
+maxLength ) { <span style="color:green">// finds a valid sequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span> i, j;
+<span style="color:green">// variable used for iteration</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// at first
+find the position of the item whose L[] is maximum</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;i = 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( j =
+1; j &lt; n; j++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">if</span>(
+L[j] &gt; L[i] )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = j;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// initialize
+the position in LisSequence where the items can be added.</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// observe that
+the data are saving from right to left!</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span> top =
+L[i] - 1;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// insert the
+item in i-th position to LisSequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;LisSequence[top] = Sequence[i];</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;top--; <span style="color:green">// is
+decreasing such that a new item can be added in a new place</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// now find the
+other valid numbers to form the sequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( j =
+i - 1; j &gt;= 0; j-- ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">if</span>(
+Sequence[j] &lt; Sequence[i] &amp;&amp; L[j] == L[i] - 1 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// we
+have found a valid item so, we will save it</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = j; <span style="color:green">//
+as in our algorithm</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LisSequence[top] = Sequence[i]; <span style="color:green">// stored</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top--; <span style="color:green">//
+decreased for new items</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// so, we have
+got the sequence, now we want to print it</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;printf(<span style="color:#A31515">"LIS
+is"</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( i =
+0; i &lt; maxLength; i++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span style="color:#A31515">"
+%d"</span>, LisSequence[i]);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;puts(<span style="color:#A31515">""</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;takeInput();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+result = LIS();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;printf(<span style="color:#A31515">"The
+LIS length is %d\n"</span>, result);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;findSequence( result );</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">It's also clear that the complexity to reconstruct
+the sequence is </span><b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">O(n)</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>An O(nlogk) Approach</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">From
+the previous sections we are sure that if we can find the L[] array, then the
+reconstruction is not a problem, since its complexity is linear. Here we
+describe another algorithm for finding L[].</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Initially
+we make a new array, let the name be I[], initially all the values of the array
+are infinite, only the 0<sup>th</sup> element contains negative infinite. The
+size of I[] will be total elements in the sequence + 1.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+iterate from left and we pick the numbers from Sequence one by one and insert
+them into I[]. When inserting a number, we find the position where all the
+numbers in left are strictly smaller than the number.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+we insert the numbers in this fashion, if you think a while, you will find that
+the numbers in I[] will always be in ascending order.</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">And
+another important thing is that, if a number is inserted into the ith place,
+and all the numbers from 1<sup>st</sup> place to (i-1)th place are smaller than
+that, so, the L[] value of that number should be i. It can be proved
+inductively. However, the next example will show the procedure fully.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Let
+the sequence be</span></p>
+
+<p class="MsoNormal" style="text-indent:.5in"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;[8, 1, 9, 8, 3, 4, 6, 1,
+5, 2]</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">There
+are 10 elements, so, I will contain 11 elements with index from 0 to 10. So, as
+described, the elements of I[] will be initially,</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i,
+i, i, i, i, i, i, i, i, i, i]</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9
+ 10</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sequence
+[8, 1, 9, 8, 3, 4, 6, 1, 5, 2]</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L
+[n, n, n, n, n, n, n, n, n, n]</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Here
+i denotes 'infinite' and n denotes 'not calculated yet'.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+let's insert the numbers from sequence into I[].</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">1)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">At
+first we have 8, so the position for 8 in I[] is 1. Since the left item is - i
+which is smaller than 8. So, we will assign I[1] = 8. Since 8 is inserted in 1<sup>st</sup>
+place, so the L[] value of 8 will be 1. After the first number we will get</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#00B050">8</span>, i, i, i, i, i, i, i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;<span style="color:#00B050">1</span>&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, 1, 9, 8, 3, 4, 6, 1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, n, n, n, n,
+n, n, n, n, n]</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">2)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we have 1, the position for 1 in I[] is 1. So, we will assign I[1] = 1 and
+since 1 is inserted in 1<sup>st</sup> place, the L[] value of 1 will be 1.
+Observe that I[1] was 8, but after this iteration 8 will be replaced by 1.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#C00000">1</span>, i, i, i, i, i, i, i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;<span style="color:#C00000">1</span>&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, 9, 8, 3,
+4, 6, 1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, n, n, n, n, n, n, n, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">3)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+next number is 9. The position for 9 in I[] is definitely the 2<sup>nd</sup>
+position. So, we will assign I[2] = 9, and since 9 is inserted in the second
+position, so the L[] value of 9 will be 2.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, i, i, i,
+i, i, i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;<span style="color:#00B0F0">2</span>&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, 8, 3, 4, 6, 1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, n, n, n,
+n, n, n, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">4)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we have 8, and the position of this 8 in I[] is the second position. So, we put
+8 in the second position of I[] (thus replacing 9). And the L[] value of 8 will
+be 2.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#C00000">1</span>, <span style="color:#7030A0">8</span>, i, i, i,
+i, i, i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;<span style="color:#7030A0">2</span>&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, <span style="color:#7030A0">8</span>, 3, 4, 6,
+1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, <span style="color:#7030A0">2</span>, n, n, n, n, n, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">5)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+next item is 3, and the position in I[] is still the second position. So, we
+place 3 in the second position of I[]. And the L[] value of 3 is 2.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#C00000">1</span>, <span style="color:#0070C0">3</span>, i, i, i,
+i, i, i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;<span style="color:#0070C0">2</span>&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, <span style="color:#7030A0">8</span>, <span style="color:#0070C0">3</span>, 4, 6, 1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, <span style="color:#7030A0">2</span>, <span style="color:#0070C0">2</span>, n, n, n,
+n, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">6)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we have 4, and the position in I[] is 3. So, the L[] value of 4 is 3.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#C00000">1</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, i, i, i, i, i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;<span style="color:#948A54">3</span>&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, <span style="color:#7030A0">8</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, 6, 1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, <span style="color:#7030A0">2</span>, <span style="color:#0070C0">2</span>, <span style="color:#948A54">3</span>, n, n, n, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in"><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">7)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Next
+item is 6, it will be inserted in the 4<sup>th</sup> position of I[]. So, the
+L[] value of 6 will be 4.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#C00000">1</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, <span style="color:#0070C0">6</span>, i, i, i,
+i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;<span style="color:#0070C0">4</span>&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, <span style="color:#7030A0">8</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, <span style="color:#0070C0">6</span>, 1, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, <span style="color:#7030A0">2</span>, <span style="color:#0070C0">2</span>, <span style="color:#948A54">3</span>, <span style="color:#0070C0">4</span>, n, n, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">8)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Next
+item is 1, it will be inserted in the 1<sup>st</sup> position of I[]. So, the
+L[] value of 1 will be 1.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#2D9F69">1</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, <span style="color:#0070C0">6</span>, i, i, i,
+i, i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;<span style="color:#2D9F69">1</span>&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, <span style="color:#7030A0">8</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, <span style="color:#0070C0">6</span>, <span style="color:#2D9F69">1</span>, 5, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, <span style="color:#7030A0">2</span>, <span style="color:#0070C0">2</span>, <span style="color:#948A54">3</span>, <span style="color:#0070C0">4</span>, <span style="color:#2D9F69">1</span>, n, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">9)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Next
+item is 5, it will be inserted in the 4<sup>th</sup> position of I[]. So, the
+L[] value of 5 will be 4.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#2D9F69">1</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, <span style="color:red">5</span>, i, i, i, i,
+i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;<span style="color:red">4</span>&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, <span style="color:#7030A0">8</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, <span style="color:#0070C0">6</span>, <span style="color:#2D9F69">1</span>, <span style="color:red">5</span>, 2]</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, <span style="color:#7030A0">2</span>, <span style="color:#0070C0">2</span>, <span style="color:#948A54">3</span>, <span style="color:#0070C0">4</span>, <span style="color:#2D9F69">1</span>, <span style="color:red">4</span>, n]</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-align:justify;text-justify:
+inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">10)<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Last
+item is 2, it will be inserted in the 2<sup>nd</sup> position of I[]. So, the
+L[] value of 2 will be 2.</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-i, <span style="color:#2D9F69">1</span>, <span style="color:#B2A1C7">2</span>, <span style="color:#948A54">4</span>, <span style="color:red">5</span>, i, i, i, i,
+i, i]</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;<span style="color:#B2A1C7">2</span>&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;8&nbsp;&nbsp;9 10</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="margin-left:.5in;text-indent:.5in"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Sequence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">8</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">9</span>, <span style="color:#7030A0">8</span>, <span style="color:#0070C0">3</span>, <span style="color:#948A54">4</span>, <span style="color:#0070C0">6</span>, <span style="color:#2D9F69">1</span>, <span style="color:red">5</span>, <span style="color:#B2A1C7">2</span>]</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span style="color:#00B050">1</span>, <span style="color:#C00000">1</span>, <span style="color:#00B0F0">2</span>, <span style="color:#7030A0">2</span>, <span style="color:#0070C0">2</span>, <span style="color:#948A54">3</span>, <span style="color:#0070C0">4</span>, <span style="color:#2D9F69">1</span>, <span style="color:red">4</span>, <span style="color:#B2A1C7">2</span>]</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+see that throughout the process the values in I[] are in ascending order. And
+since we place a number in such a place where all the numbers in left are
+strictly less than the number so, the L[] value will be correct for all the
+numbers.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">One
+more thing, after all the iterations are over, <b>don't think that I[] will also
+contain a sequence</b>. Because in the example above, see that 1, 2, 4, 5 is
+not the correct sequence. To get a sequence, since we already have the L[]
+values, we can use the reconstruction method described earlier.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+since the values in I[] will always be in ascending order, so, to find a
+position of a number we can definitely use binary search. So, if the final LIS length
+is k and there are n numbers then to insert a number using binary search the
+complexity will be </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">O(logk)</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">. Thus the overall
+complexity will be </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">O(nlogk)</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, since we are
+inserting n items.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Here
+is the code which uses the above idea to find LIS.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">const</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> <span style="color:blue">int</span>
+inf = 2000000000; <span style="color:green">// a large value as infinity</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> n; <span style="color:green">// the number
+of items in the sequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> Sequence[32]; <span style="color:green">//
+the sequence of integers</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> L[32]; <span style="color:green">// L[] as
+described in the algorithm</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> I[32]; <span style="color:green">// I[] as
+described in the algorithm</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">void</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> takeInput() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;scanf(<span style="color:#A31515">"%d"</span>,
+&amp;n); <span style="color:green">// how many numbers in the sequence ?</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( <span style="color:blue">int</span> i = 0; i &lt; n; i++ ) <span style="color:green">//
+take the sequence</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(<span style="color:#A31515">"%d"</span>,
+&amp;Sequence[i]);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> LisNlogK() { <span style="color:green">//
+which runs the NlogK LIS algorithm</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span> i; <span style="color:green">// auxilary variable for iteration</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;I[0] = -inf; <span style="color:green">//
+I[0] = -infinite</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( i =
+1; i &lt;= n; i++ ) <span style="color:green">// observe that i &lt;= n are
+given</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I[i] = inf; <span style="color:green">//
+I[1 to n] = infinite</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+LisLength = 0; <span style="color:green">// keeps the maximum position where a
+data is inserted</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">for</span>( i =
+0; i &lt; n; i++ ) { <span style="color:green">// iterate left to right</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+low, high, mid; <span style="color:green">// variables to perform binary search</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low = 0; <span style="color:green">//
+minimum position where we to put data in I[]</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high = LisLength; <span style="color:green">// the maximum position</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">while</span>(
+low &lt;= high ) { <span style="color:green">// binary search to find the
+correct position</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mid = ( low + high ) / 2;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">if</span>(
+I[mid] &lt; Sequence[i] )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;low = mid + 1;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">else</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;high = mid - 1;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// observe
+the binary search carefully, when the binary search ends</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green">// low &gt;
+high and we put our item in I[low]</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I[low] = Sequence[i];</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">if</span>(
+LisLength &lt; low ) <span style="color:green">// LisLength contains the
+maximum position</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LisLength = low;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">return</span>
+LisLength; <span style="color:green">// return the result</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;takeInput();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">int</span>
+result = LisNlogK();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;printf(<span style="color:#A31515">"The
+LIS length is %d\n"</span>, result);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Discussion</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+above idea can also be used for finding Longest Decreasing Subsequence or LDS. You
+should try to construct it yourself to understand it fully. There is another
+technique also. Just reverse the ordering of the numbers in Sequence[] and then
+run the usual LIS. If you think a bit you will find that the sequence you have
+found in LIS for the reversed Sequence is actually an LDS for the main Sequence.</span></p>
+
+</div>
+
+
+
+
+				<hr style="color: #717171; height: .5px;">
+
+				<div id="problem_setter">
+					Author: Jane Alam Jan				</div>
+			</div>
+		</div>
+<div class="bottomDiv" align="center">
+	<table width="100%">
+		<tbody><tr>
+			<td width="50%">
+				<div class="midMessage">
+					Developed and Maintained by
+					<br><b>JANE ALAM JAN</b>
+				</div>
+
+			</td>
+			<td width="50%">
+				<div class="midMessage">
+					Copyright © 2012
+					<br><b>LightOJ, Jane Alam Jan</b>
+				</div>
+
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+	
+
+</body></html>

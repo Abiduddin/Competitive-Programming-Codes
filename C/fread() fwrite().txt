@@ -1,0 +1,14 @@
+fread( ) and fwrite( )
+To read and write data types that are longer than 1 byte, the C file system provides two functions:
+fread( ) and fwrite( ). These functions allow the reading and writing of blocks of any type of data.
+Their prototypes are
+size_t fread(void *buffer, size_t num_bytes, size_t count, FILE *fp);
+size_t fwrite(const void *buffer, size_t num_bytes, size_t count, FILE *fp);
+For fread( ), buffer is a pointer to a region of memory that will receive the data from the file. For
+fwrite( ), buffer is a pointer to the information that will be written to the file. The value of count
+determines how many items are read or written, with each item being num_bytes bytes in length.
+(Remember, the type size_t is defined as some kind of unsigned integer.) Finally, fp is a file pointer
+to a previously opened stream.
+The fread( ) function returns the number of items read. This value may be less than count if the end
+of the file is reached or an error occurs. The fwrite( ) function returns the number of items written.
+This value will equal count unless an error occurs

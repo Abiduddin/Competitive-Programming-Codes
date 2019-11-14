@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Widget</title>
+    
+    <link rel="stylesheet" href="/gfx/styles/widget.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/themes/tooltips.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/gfx/jquery.js"></script>
+<script type="text/javascript" src="/gfx/jquery.form.js"></script>
+<script type="text/javascript" src="/gfx/scripts/widget.js"></script>
+<script type='text/javascript' src='/gfx/jquery.bgiframe.js'></script>
+<script type='text/javascript' src='/gfx/jquery.tooltip.js'></script>
+<script type='text/javascript' src='/gfx/jquery.cxhelp.js'></script>
+
+	    
+    <style type="text/css" media="screen">
+      /* ignore these styles */
+      /* body { padding: 0 5px; }
+      .widget { float: left; margin: 10px 5px; }*/
+      /* stop ignoring */
+    </style>
+    <style type="text/css" media="screen">
+    <!--
+      /* width of the widget
+         width = param - ($border_width * 2)
+          where $border_width = 1
+       */
+      .width { width: 538px; } /* example param = 300 */
+      
+      /* width of the viewport.
+         width = param * $panel_count
+           where $panel_count = 5
+       */
+      .width-all { width: 2690px; } /* example param = 300 */
+      
+      /* height of the widget. 
+         height = param - ($border_width * 2) - $ad_height - $tabs_height
+          where $border_width = 1
+                $ad_height = 40
+                $tabs_height = 30
+      */
+      .height { height: 648px; } /* example param = 300 */
+      .height_swf { height: 608px; }
+    -->
+    </style>
+
+    <script type="text/javascript">
+    <!--
+    
+      var widget_width = 538; // like above in CSS
+      var widget_login = 'Login';
+      var widget_author = 'Author';
+      var referer = "http://cpbook.subeen.com/2012/11/prime-number.html";
+      var scene = "PHA%2B4oCc4Kau4KeM4Kay4Ka/4KaVIOCmuOCmguCmluCnjeCmr%2BCmviDgprngpprgp43gppvgp4cg4Ka44KeH4Ka44KasIOCmuOCmguCmluCnjeCmr%2BCmviDgpq/gpr7gprDgpr4gMS3gpo/gprAg4Kaa4KeH4Kav4Ka84KeHIOCmrOCmoeCmvCDgpqrgp4LgprDgp43gpqPgprjgpoLgppbgp43gpq/gpr4g4KaP4Kas4KaCIOCmuOCnh%2BCmn%2BCmvyDgppXgp4fgpqzgprIgMSDgpo/gpqzgpoIg4KaT4KaHIOCmuOCmguCmluCnjeCmr%2BCmvuCmn%2BCmvyDgpqbgp43gpqzgpr7gprDgpr7gpocg4Kao4Ka/4KaD4Ka24KeH4Ka34KeHIOCmrOCmv%2BCmreCmvuCmnOCnjeCmryDgprngpqzgp4fgpaTigJwg4Kak4KeL4Kau4Ka%2B4KawIOCmleCnjeCmsuCmvuCmuOCnh%2BCmsCDgppvgpr7gpqTgp43gprAt4Kab4Ka%2B4Kak4KeN4Kaw4KeA4Kam4KeH4KawIOCmruCmp%2BCnjeCmr%2BCnhyDgppXgpq/gprzgppzgpqjgp4fgprAg4KaX4Kao4Ka/4KakIOCmquCmsOCngOCmleCnjeCmt%2BCmvuCmr%2BCmvCDgpqrgp43gprDgpr7gpqrgp43gpqQg4Kao4Kau4KeN4Kas4KawICDgpq7gp4zgprLgpr/gppUg4Ka44KaC4KaW4KeN4Kav4Ka%2BIOCmpOCmviDgpqzgp4fgprAg4KaV4Kaw4Kak4KeHIOCmueCmrOCnh%2BClpDwvcD48YnIvPjxoMz4g4KaH4Kao4Kaq4KeB4KafIDwvaDM%2BPGJyLz48cD7gpqrgp43gprDgpqXgpq4g4Kay4Ka%2B4KaH4Kao4KeHIOCmj%2BCmleCmn%2BCmvyDgprjgpoLgppbgp43gpq/gpr4g4Kal4Ka%2B4KaV4Kas4KeH4KWkIOCmpOCmvuCmsOCmquCmsCDgprjgp4fgpocg4Ka44KaC4KaW4KeN4Kav4Ka%2B4Kaf4Ka/4KawIOCmruCmvuCmqCDgpq/gpqQsIOCmpOCmpOCmn%2BCmvyDgprLgpr7gpofgpqgg4Kal4Ka%2B4KaV4Kas4KeH4KWkIOCmquCnjeCmsOCmpOCmvyDgprLgpr7gpofgpqjgp4cgIOCnpiDgpqXgp4fgppXgp4cg4Ken4Kem4KemLeCmj%2BCmsCDgpq7gpqfgp43gpq/gp4cg4Ken4KemIOCmn%2BCmvyDgppXgprDgp4cg4Ka44KaC4KaW4KeN4Kav4Ka%2BIOCmpuCnh%2BCmr%2BCmvOCmviDgpqXgpr7gppXgpqzgp4cgIOCmr%2BCmviDgppfgpqjgpr/gpqQg4Kaq4Kaw4KeA4KaV4KeN4Ka34Ka%2B4Kav4Ka8ICDgp6fgp6Yg4Kac4Kao4KeH4KawIOCmquCnjeCmsOCmvuCmquCnjeCmpCAg4Kao4Kau4KeN4Kas4Kaw4KWkPC9wPjxici8%2BPGgzPiDgpobgpongpp/gpqrgp4Hgpp8gPC9oMz48YnIvPjxwPuCmquCnjeCmsOCmpOCmvyDgprLgpr7gpofgpqjgp4cg4KaP4KaV4Kaf4Ka/IOCmleCmsOCnhyDgprjgpoLgppbgp43gpq/gpr4g4Kal4Ka%2B4KaV4Kas4KeHIOCmr%2BCmviDgpq7gp4vgpp8g4KaV4Kak4Kac4KaoIOCmj%2BCmsCDgpqrgp43gprDgpr7gpqrgp43gpqQg4Kao4Kau4KeN4Kas4KawIOCmruCnjOCmsuCmv%2BCmlSDgprjgpoLgppbgp43gpq/gpr4g4Kaq4KeN4Kaw4KaV4Ka%2B4Ka2IOCmleCmsOCmrOCnh%2BClpDwvcD48YnIvPjxoMz4g4KaJ4Kam4Ka%2B4Ka54Kaw4KajIDwvaDM%2BPGJyLz48cHJlPjxzdHJvbmc%2BIOCmh%2BCmqOCmquCngeCmnzo8L3N0cm9uZz48YnIgLz48YnIvPjQ8YnIvPjcxIDk5IDgxIDUgNDMgMjkgMTAwIDUxIDY1IDIyPGJyLz41NSAyNiAzMSA2NyAxNyA4OCA5MyA0NyA3NSAxPGJyLz42MiA4NiA5IDI1IDE0IDM2IDQ5IDU2IDc3IDk1PGJyLz4xMSA5NyA3OSA0MiAzMyAyMyA3IDg0IDU5IDYxPGJyLz48YnIgLz48YnIgLz48YnIvPjxzdHJvbmc%2BIOCmhuCmieCmn%2BCmquCngeCmnzo8L3N0cm9uZz48YnIgLz48YnIvPjQ8YnIvPjQ8YnIvPjA8YnIvPjc8YnIvPjxici8%2BPGJyLz48L3ByZT48YnIvPg==";
+      var ptype = "programming";
+      var pcode = "PAEIK85H";
+    -->
+    </script>
+    
+  </head>
+  <body>
+    
+    <div class="widget width height">
+      <form id="answer-form" action="/widget/send/PAEIK85H/" enctype="multipart/form-data" method="post">
+      <div id="viewport" class="width-all">
+
+        <div id="challenge" class="panel width height">
+          <div class="crop">
+            <h1><a href="http://scarky.com" target="_parent" class="logo"><span class="logo"></span></a></h1>
+            	            <h2 class="header">
+	            	পরীক্ষার খাতায় মৌলিক সংখ্যা
+	            	<span style="font-size: 70%">
+	            		Programming	            			            			            			            			            		 
+	            		Challenge
+	            	</span>
+	            </h2>
+	            	            <p><p>“মৌলিক সংখ্যা হচ্ছে সেসব সংখ্যা যারা 1-এর চেয়ে বড় পূর্ণসংখ্যা এবং সেটি কেবল 1 এবং ওই সংখ্যাটি দ্বারাই নিঃশেষে বিভাজ্য হবে।“ তোমার ক্লাসের ছাত্র-ছাত্রীদের মধ্যে কয়জনের গনিত পরীক্ষায় প্রাপ্ত নম্বর  মৌলিক সংখ্যা তা বের করতে হবে।</p><br/><h3> ইনপুট </h3><br/><p>প্রথম লাইনে একটি সংখ্যা থাকবে। তারপর সেই সংখ্যাটির মান যত, ততটি লাইন থাকবে। প্রতি লাইনে  ০ থেকে ১০০-এর মধ্যে ১০ টি করে সংখ্যা দেয়া থাকবে  যা গনিত পরীক্ষায়  ১০ জনের প্রাপ্ত  নম্বর।</p><br/><h3> আউটপুট </h3><br/><p>প্রতি লাইনে একটি করে সংখ্যা থাকবে যা মোট কতজন এর প্রাপ্ত নম্বর মৌলিক সংখ্যা প্রকাশ করবে।</p><br/><h3> উদাহরণ </h3><br/><pre><strong> ইনপুট:</strong><br /><br/>4<br/>71 99 81 5 43 29 100 51 65 22<br/>55 26 31 67 17 88 93 47 75 1<br/>62 86 9 25 14 36 49 56 77 95<br/>11 97 79 42 33 23 7 84 59 61<br/><br /><br /><br/><strong> আউটপুট:</strong><br /><br/>4<br/>4<br/>0<br/>7<br/><br/><br/></pre><br/></p>
+	                                  </div>
+        </div><!-- /#question -->
+        
+		<div id="info" class="panel width height">
+					<div class="crop">
+				<h1><a href="http://scarky.com" taget="_parent"><span class="logo"></span></a></h1>
+				<h2 class="header">
+					পরীক্ষার খাতায় মৌলিক সংখ্যা
+					<span style="font-size: 70%">
+						Programming																								 
+						Challenge
+					</span>
+				</h2>
+				<div class="grid">
+					<label>Resource</label>
+					<span class="field">
+						<a href="http://cpbook.subeen.com" target="_parent">cpbook.subeen.com</a>
+					</span>
+				</div>
+				<div class="grid">
+					<label>Starts</label>
+					<span class="field">
+						19 November 2012 5:27
+					</span>
+				</div>
+				<div class="grid">
+					<label>Ends</label>
+					<span class="field">
+						never					</span>
+				</div>
+				<div class="grid">
+					<label>Submissions</label>
+					<span class="field">
+						806
+					</span>
+				</div>
+				<div class="grid">
+					<label>First submission</label>
+										<span class="field" title="2012-11-19 06:49">
+						1029&nbsp;days&nbsp;ago
+					</span>
+									</div>
+				<div class="grid">
+					<label>Last submission</label>
+										<span class="field" title="2015-09-14 20:28">
+						10&nbsp;hours&nbsp;ago
+					</span>
+									</div>
+				<div class="grid">
+					<label>Author's site</label>
+					<span class="field">
+						<a href="http://cpbook.subeen.com" target="_parent">cpbook.subeen.com</a>
+					</span>
+				</div>
+				<div class="grid">
+					<span class="field">
+						<br/>
+						<a target="_parent" href="http://www.scarky.com/stats/sites/site=2329">See this author's other challenges</a>
+					</span>
+				</div>
+			</div>
+		 
+		</div><!-- /#info -->
+
+		
+        <div id="answer" class="panel width height" action="/widget/send/PAEIK85H/" enctype="multipart/form-data" method="post">
+		          <div class="crop">
+          		            <div id="answer-text" class="block ">
+	              <span class="label">
+	                <label for="solution">
+	                	Paste the answer here
+	                </label>
+	                	                <span class="toggle"><a href="">Upload a file</a> instead</span>
+						              </span>
+	              <textarea id="solution" name="file" rows="8" cols="40"></textarea>
+	            </div><!-- /#answer-text -->
+	
+	            <div id="answer-file" class="block hidden">
+	              <span class="label">
+	                <label for="file">
+	                	Upload a file
+	                </label>
+	                <span class="toggle">No, <a href="">Paste the answer</a></span>
+	
+	              </span>
+	              <span class="field"><input type="file" id="file" name="subm_file" /></span>
+	            </div><!-- /#answer-upload -->
+	
+	
+											            <div class="grid ">
+		              <label for="language">Language</label>
+		              <span class="field">
+		                <select id="language" name="lang">
+		                		                	<option value="11">C</option>
+		                		                	<option value="1">C++</option>
+		                		                </select>
+		              </span>          
+		            </div>
+		            	            			            <div class="grid">
+              <label id="author-label" for="author">Author</label>
+              <span class="field"><input type="text" id="author" name="author" value="" /></span>
+            </div>
+			
+            <div id="is-account" class="grid hidden">
+              <label for="password">Password</label>
+              <span class="field"><input type="password" id="password" name="password" value="" /></span>
+            </div>
+            
+            <div id="is-secretphrase" class="grid hidden">
+              <label for="secretphrase">Secret phrase:</label>
+              <span class="field"><input type="text" id="secretphrase" name="secretphrase" value="" /></span>
+            </div>
+			
+            <div class="block indent">
+              <label for="account"><input type="checkbox" id="account" name="account" value="1"/> Reserve this nick for me</label>
+              <img src="/gfx/styles/i/button-info.png" onclick="JavaScript:PopUp('http://blog.scarky.com/?p=257#pass', 350, 790)"/>
+            </div>
+            
+            <div class="block indent">
+              <label for="secretphrase"><input type="checkbox" id="secretphrase_cb" name="secretphrase_cb" value="1"/> Give a secret phrase</label>
+              <img src="/gfx/styles/i/button-info.png" onclick="JavaScript:PopUp('http://blog.scarky.com/?p=257#secret', 350, 790)"/>
+            </div>
+
+            <div class="submit indent">
+              <input type="hidden" id="answer-type" name="answer-type" value="text" />
+              <input type="submit" id="btnSubmit" value="Send this answer" />
+            </div>
+          </div>
+		        </div><!-- /#answer -->
+
+        <div id="hall-of-fame" class="panel width height">
+        	
+			<div class="crop">
+			  <div id="hof-content"></div>
+			</div>
+		 
+        </div><!-- /#hall-of-fame -->
+        
+        <div id="submission" class="panel width height">
+        	<div class="crop">
+            	<h1>Your submission</h1>
+            </div>
+            <br/><br/>
+        	<center>
+        		<h2 id="status">waiting...</h2>
+        	</center>
+        </div><!-- /#solution -->
+        
+      </div><!-- /#viewport -->
+      <input type="hidden" name="referer" value="http://cpbook.subeen.com/2012/11/prime-number.html"/>
+      </form>
+
+      
+      <ul id="tabs">
+        <li class="current"><span><a href="#challenge">Challenge</a></span></li>
+        <li><span><a href="#info">Info</a></span></li>
+        <li id="li_answer"><span><a href="#answer">Answer</a></span></li>
+        <li class="extra"><span><a href="#hall-of-fame" id="btnHallOfFame">Hall of Fame</a></span></li>
+        <li class="extra" style="display:none"><span><a href="#submission" id="btnSubmission">Submission</a></span></li>
+      </ul>
+      
+      <div id="ads">
+        <p><table border=0 width=99%>
+<tr>
+<td align=left>
+<a target="_parent" title="Your great ideas will be born here" alt="ideone.com" style="border-bottom: 0px;" href="http://ideone.com"><img border=0 src="//scarky.com/content/default/ideone-mini.png"></a>
+</td>
+<td>
+<div style="text-align: right; font-size: 10px;">Find more challenges on <a style="text-decoration:none; border: 0px; font-weight: normal;" href="http://scarky.com" target="_parent">Scarky.com </a>
+<br>
+Powered by SPOJ Engine</a> &#169; <a alt="Sphere Research Labs" title="Sphere Research Labs" style="text-decoration:none; border: 0px;  font-weight: normal;"  href="http://www.sphere-research.com" target="_parent">Sphere Research Labs</a></div>
+</td>
+</tr>
+</table></p>
+
+      </div><!-- /#ads -->
+      
+    </div><!-- /.widget -->
+    
+    <script type="text/javascript"><!--
+	function PopUp(ref, height, width)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no,scrollbars=yes,resizable=yes,height="+height+",width="+width;
+		newWin = window.open(ref,"TellObj",strFeatures);
+	    newWin.opener = top;
+	}
+	--></script>
+    
+   
+    <script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-10507872-2");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	
+    
+  </body>
+</html>

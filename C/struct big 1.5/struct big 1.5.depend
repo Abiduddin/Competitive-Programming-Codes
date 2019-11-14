@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1458586432 source:e:\work place\c\struct big 1.5\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+

@@ -1,0 +1,8 @@
+C prg:     y
+Dis math:  n
+Math:      y
+EEE:       n
+CE:        y
+PHY:       r
+URIS:      n
+STAT:      y

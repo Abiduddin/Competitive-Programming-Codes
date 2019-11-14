@@ -1,0 +1,20 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+
+public class uva424 {// for submit change it to "Main"
+	public static void main(String args[]){
+		Scanner ab=new Scanner(System.in);
+		BigInteger b1,b2;
+		b2=BigInteger.ZERO;
+		while(ab.hasNext()){
+			b1=ab.nextBigInteger();
+			if(b1.equals(BigInteger.ZERO)){
+				System.out.println(b2);
+				break;
+			}
+			b2=b2.add(b1);
+			
+		}
+	}
+}

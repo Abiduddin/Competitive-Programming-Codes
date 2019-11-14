@@ -1,0 +1,29 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+
+public class uva10925 { for submit change it to Main
+	public static void main(String args[]){
+		Scanner ab=new Scanner(System.in);
+		BigInteger b1,b2,b3;
+		int i,j,c=0,k,l;
+		
+		while(ab.hasNext()){
+			j=ab.nextInt();
+			k=ab.nextInt();
+			if(j==0&&k==0)
+				break;
+			b2=BigInteger.ZERO;
+			
+			for(i=0;ij;i++){
+				b1=ab.nextBigInteger();
+				b2=b2.add(b1);
+			}
+			b3=b2.divide(BigInteger.valueOf(k));
+			
+			System.out.println(Bill #+(++c)+ costs +b2+ each friend should pay +b3+n);
+		}
+		
+		
+	}
+}

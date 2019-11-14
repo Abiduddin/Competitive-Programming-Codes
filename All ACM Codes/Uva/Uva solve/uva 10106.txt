@@ -1,0 +1,19 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+
+public class uva10106 {
+	public static void main(String args[]){
+		Scanner ab=new Scanner(System.in);
+		BigInteger b1,b2;
+		
+		while(ab.hasNext()){
+			b2=ab.nextBigInteger();
+			b1=ab.nextBigInteger();
+			
+			b2=b2.multiply(b1);
+			System.out.println(b2);
+			
+		}
+	}
+}

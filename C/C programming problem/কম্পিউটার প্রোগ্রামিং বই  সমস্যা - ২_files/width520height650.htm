@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Widget</title>
+    
+    <link rel="stylesheet" href="/gfx/styles/widget.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/themes/tooltips.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/gfx/jquery.js"></script>
+<script type="text/javascript" src="/gfx/jquery.form.js"></script>
+<script type="text/javascript" src="/gfx/scripts/widget.js"></script>
+<script type='text/javascript' src='/gfx/jquery.bgiframe.js'></script>
+<script type='text/javascript' src='/gfx/jquery.tooltip.js'></script>
+<script type='text/javascript' src='/gfx/jquery.cxhelp.js'></script>
+
+	    
+    <style type="text/css" media="screen">
+      /* ignore these styles */
+      /* body { padding: 0 5px; }
+      .widget { float: left; margin: 10px 5px; }*/
+      /* stop ignoring */
+    </style>
+    <style type="text/css" media="screen">
+    <!--
+      /* width of the widget
+         width = param - ($border_width * 2)
+          where $border_width = 1
+       */
+      .width { width: 518px; } /* example param = 300 */
+      
+      /* width of the viewport.
+         width = param * $panel_count
+           where $panel_count = 5
+       */
+      .width-all { width: 2590px; } /* example param = 300 */
+      
+      /* height of the widget. 
+         height = param - ($border_width * 2) - $ad_height - $tabs_height
+          where $border_width = 1
+                $ad_height = 40
+                $tabs_height = 30
+      */
+      .height { height: 578px; } /* example param = 300 */
+      .height_swf { height: 538px; }
+    -->
+    </style>
+
+    <script type="text/javascript">
+    <!--
+    
+      var widget_width = 518; // like above in CSS
+      var widget_login = 'Login';
+      var widget_author = 'Author';
+      var referer = "http://cpbook.subeen.com/2012/11/positive-negative.html";
+      var scene = "PHA%2B4Ka24KeC4Kaj4KeN4Kav4KeH4KawIOCmmuCnh%2BCmr%2BCmvOCnhyDgpqzgpqHgprwg4Ka44KaC4KaW4KeN4Kav4Ka%2B4KaX4KeB4Kay4KeLIOCmueCmmuCnjeCmm%2BCnhyDgpqfgpqjgpr7gpqTgp43gpq7gppUg4KaG4KawIOCmtuCnguCmo%2BCnjeCmr%2BCnh%2BCmsCDgpprgp4fgpq/gprzgp4cg4Kab4KeL4KafIOCmuOCmguCmluCnjeCmr%2BCmvuCml%2BCngeCmsuCniyDgprngpprgp43gppvgp4cg4KaL4Kaj4Ka%2B4Kak4KeN4Kau4KaVIOCmuOCmguCmluCnjeCmr%2BCmvuClpCDgpoXgpqjgp4fgppXgppfgp4HgprLgp4sg4Ka44KaC4KaW4KeN4Kav4Ka%2BIOCmpuCnh%2BCmk%2BCmr%2BCmvOCmviDgpqXgpr7gppXgpqzgp4csIOCmleCmr%2BCmvOCmn%2BCmviDgpqfgpqjgpr7gpqTgp43gpq7gppUg4KaG4KawIOCmleCmr%2BCmvOCmn%2BCmviDgpovgpqPgpr7gpqTgp43gpq7gppUg4Ka44KeH4Kaf4Ka/IOCmrOCnh%2BCmsCDgppXgprDgpqTgp4cg4Ka54Kas4KeH4KWkPC9wPjxici8%2BPGgzPuCmh%2BCmqOCmquCngeCmnzwvaDM%2BPGJyLz48cD7gpqrgp43gprDgpqXgpq4g4Kay4Ka%2B4KaH4Kao4KeHIOCmj%2BCmleCmn%2BCmvyDgprjgpoLgppbgp43gpq/gpr4g4Kam4KeH4KaT4Kav4Ka84Ka%2BIOCmpeCmvuCmleCmrOCnh%2BClpCDgprjgpoLgppbgp43gpq/gpr7gpp/gpr/gprAg4Kau4Ka%2B4KaoIOCmr%2BCmpCDgprngpqwg4Kak4Kak4Kaf4Ka/IOCmsuCmvuCmh%2BCmqOCnhyDgpo/gppXgpp/gpr8g4KaV4Kaw4KeHIOCmuOCmguCmluCnjeCmr%2BCmviDgpqXgpr7gppXgpqzgp4fgpaQ8L3A%2BPGJyLz48aDM%2B4KaG4KaJ4Kaf4Kaq4KeB4KafPC9oMz48YnIvPjxwPuCmhuCmieCmn%2BCmquCngeCmn%2BCnhyDgpqbgp4Hgpp/gpr8g4Ka44KaC4KaW4KeN4Kav4Ka%2BIOCmpeCmvuCmleCmrOCnh%2BClpCDgpqrgp43gprDgpqXgpq7gp4cg4Kal4Ka%2B4KaV4Kas4KeHIOCmruCni%2BCmnyDgpqfgpqjgpr7gpqTgp43gpq7gppUg4Ka44KaC4KaW4KeN4Kav4Ka%2BLCDgpqTgpr7gprDgpqrgprDgp4cg4KaP4KaV4Kaf4Ka/IOCmuOCnjeCmquCnh%2BCmuCDgppXgp43gpq/gpr7gprDgp4fgppXgp43gpp/gpr7gprAsIOCmpOCmvuCmsOCmquCmsOCnhyDgpq7gp4vgpp8g4KaL4Kaj4Ka%2B4Kak4KeN4Kau4KaVIOCmuOCmguCmluCnjeCmr%2BCmvuClpDwvcD48YnIvPjxoMz7gpongpqbgpr7gprngprDgpqM8L2gzPjxici8%2BPHByZT48c3Ryb25nPuCmh%2BCmqOCmquCngeCmnzo8L3N0cm9uZz48YnIgLz48YnIvPjU8YnIvPjEwPGJyLz4yMzxici8%2BLTg8YnIvPjI8YnIvPi05NzY1PGJyLz48YnIgLz48YnIgLz48YnIvPjxzdHJvbmc%2B4KaG4KaJ4Kaf4Kaq4KeB4KafOjwvc3Ryb25nPjxiciAvPjxici8%2BMyAyPGJyLz48YnIvPjxici8%2BPC9wcmU%2BPGJyLz4=";
+      var ptype = "programming";
+      var pcode = "PKY0OX9Z";
+    -->
+    </script>
+    
+  </head>
+  <body>
+    
+    <div class="widget width height">
+      <form id="answer-form" action="/widget/send/PKY0OX9Z/" enctype="multipart/form-data" method="post">
+      <div id="viewport" class="width-all">
+
+        <div id="challenge" class="panel width height">
+          <div class="crop">
+            <h1><a href="http://scarky.com" target="_parent" class="logo"><span class="logo"></span></a></h1>
+            	            <h2 class="header">
+	            	ধনাত্মক - ঋণাত্মক
+	            	<span style="font-size: 70%">
+	            		Programming	            			            			            			            			            		 
+	            		Challenge
+	            	</span>
+	            </h2>
+	            	            <p><p>শূণ্যের চেয়ে বড় সংখ্যাগুলো হচ্ছে ধনাত্মক আর শূণ্যের চেয়ে ছোট সংখ্যাগুলো হচ্ছে ঋণাত্মক সংখ্যা। অনেকগুলো সংখ্যা দেওয়া থাকবে, কয়টা ধনাত্মক আর কয়টা ঋণাত্মক সেটি বের করতে হবে।</p><br/><h3>ইনপুট</h3><br/><p>প্রথম লাইনে একটি সংখ্যা দেওয়া থাকবে। সংখ্যাটির মান যত হব ততটি লাইনে একটি করে সংখ্যা থাকবে।</p><br/><h3>আউটপুট</h3><br/><p>আউটপুটে দুটি সংখ্যা থাকবে। প্রথমে থাকবে মোট ধনাত্মক সংখ্যা, তারপরে একটি স্পেস ক্যারেক্টার, তারপরে মোট ঋণাত্মক সংখ্যা।</p><br/><h3>উদাহরণ</h3><br/><pre><strong>ইনপুট:</strong><br /><br/>5<br/>10<br/>23<br/>-8<br/>2<br/>-9765<br/><br /><br /><br/><strong>আউটপুট:</strong><br /><br/>3 2<br/><br/><br/></pre><br/></p>
+	                                  </div>
+        </div><!-- /#question -->
+        
+		<div id="info" class="panel width height">
+					<div class="crop">
+				<h1><a href="http://scarky.com" taget="_parent"><span class="logo"></span></a></h1>
+				<h2 class="header">
+					ধনাত্মক - ঋণাত্মক
+					<span style="font-size: 70%">
+						Programming																								 
+						Challenge
+					</span>
+				</h2>
+				<div class="grid">
+					<label>Resource</label>
+					<span class="field">
+						<a href="http://cpbook.subeen.com" target="_parent">cpbook.subeen.com</a>
+					</span>
+				</div>
+				<div class="grid">
+					<label>Starts</label>
+					<span class="field">
+						13 November 2012 15:44
+					</span>
+				</div>
+				<div class="grid">
+					<label>Ends</label>
+					<span class="field">
+						never					</span>
+				</div>
+				<div class="grid">
+					<label>Submissions</label>
+					<span class="field">
+						3703
+					</span>
+				</div>
+				<div class="grid">
+					<label>First submission</label>
+										<span class="field" title="2012-11-13 15:48">
+						1035&nbsp;days&nbsp;ago
+					</span>
+									</div>
+				<div class="grid">
+					<label>Last submission</label>
+										<span class="field" title="2015-09-14 23:46">
+						7&nbsp;hours&nbsp;ago
+					</span>
+									</div>
+				<div class="grid">
+					<label>Author's site</label>
+					<span class="field">
+						<a href="http://cpbook.subeen.com" target="_parent">cpbook.subeen.com</a>
+					</span>
+				</div>
+				<div class="grid">
+					<span class="field">
+						<br/>
+						<a target="_parent" href="http://www.scarky.com/stats/sites/site=2318">See this author's other challenges</a>
+					</span>
+				</div>
+			</div>
+		 
+		</div><!-- /#info -->
+
+		
+        <div id="answer" class="panel width height" action="/widget/send/PKY0OX9Z/" enctype="multipart/form-data" method="post">
+		          <div class="crop">
+          		            <div id="answer-text" class="block ">
+	              <span class="label">
+	                <label for="solution">
+	                	Paste the answer here
+	                </label>
+	                	                <span class="toggle"><a href="">Upload a file</a> instead</span>
+						              </span>
+	              <textarea id="solution" name="file" rows="8" cols="40"></textarea>
+	            </div><!-- /#answer-text -->
+	
+	            <div id="answer-file" class="block hidden">
+	              <span class="label">
+	                <label for="file">
+	                	Upload a file
+	                </label>
+	                <span class="toggle">No, <a href="">Paste the answer</a></span>
+	
+	              </span>
+	              <span class="field"><input type="file" id="file" name="subm_file" /></span>
+	            </div><!-- /#answer-upload -->
+	
+	
+											            <div class="grid ">
+		              <label for="language">Language</label>
+		              <span class="field">
+		                <select id="language" name="lang">
+		                		                	<option value="11">C</option>
+		                		                	<option value="1">C++</option>
+		                		                </select>
+		              </span>          
+		            </div>
+		            	            			            <div class="grid">
+              <label id="author-label" for="author">Author</label>
+              <span class="field"><input type="text" id="author" name="author" value="" /></span>
+            </div>
+			
+            <div id="is-account" class="grid hidden">
+              <label for="password">Password</label>
+              <span class="field"><input type="password" id="password" name="password" value="" /></span>
+            </div>
+            
+            <div id="is-secretphrase" class="grid hidden">
+              <label for="secretphrase">Secret phrase:</label>
+              <span class="field"><input type="text" id="secretphrase" name="secretphrase" value="" /></span>
+            </div>
+			
+            <div class="block indent">
+              <label for="account"><input type="checkbox" id="account" name="account" value="1"/> Reserve this nick for me</label>
+              <img src="/gfx/styles/i/button-info.png" onclick="JavaScript:PopUp('http://blog.scarky.com/?p=257#pass', 350, 790)"/>
+            </div>
+            
+            <div class="block indent">
+              <label for="secretphrase"><input type="checkbox" id="secretphrase_cb" name="secretphrase_cb" value="1"/> Give a secret phrase</label>
+              <img src="/gfx/styles/i/button-info.png" onclick="JavaScript:PopUp('http://blog.scarky.com/?p=257#secret', 350, 790)"/>
+            </div>
+
+            <div class="submit indent">
+              <input type="hidden" id="answer-type" name="answer-type" value="text" />
+              <input type="submit" id="btnSubmit" value="Send this answer" />
+            </div>
+          </div>
+		        </div><!-- /#answer -->
+
+        <div id="hall-of-fame" class="panel width height">
+        	
+			<div class="crop">
+			  <div id="hof-content"></div>
+			</div>
+		 
+        </div><!-- /#hall-of-fame -->
+        
+        <div id="submission" class="panel width height">
+        	<div class="crop">
+            	<h1>Your submission</h1>
+            </div>
+            <br/><br/>
+        	<center>
+        		<h2 id="status">waiting...</h2>
+        	</center>
+        </div><!-- /#solution -->
+        
+      </div><!-- /#viewport -->
+      <input type="hidden" name="referer" value="http://cpbook.subeen.com/2012/11/positive-negative.html"/>
+      </form>
+
+      
+      <ul id="tabs">
+        <li class="current"><span><a href="#challenge">Challenge</a></span></li>
+        <li><span><a href="#info">Info</a></span></li>
+        <li id="li_answer"><span><a href="#answer">Answer</a></span></li>
+        <li class="extra"><span><a href="#hall-of-fame" id="btnHallOfFame">Hall of Fame</a></span></li>
+        <li class="extra" style="display:none"><span><a href="#submission" id="btnSubmission">Submission</a></span></li>
+      </ul>
+      
+      <div id="ads">
+        <p><table border=0 width=99%>
+<tr>
+<td align=left>
+<a target="_parent" title="Your great ideas will be born here" alt="ideone.com" style="border-bottom: 0px;" href="http://ideone.com"><img border=0 src="//scarky.com/content/default/ideone-mini.png"></a>
+</td>
+<td>
+<div style="text-align: right; font-size: 10px;">Find more challenges on <a style="text-decoration:none; border: 0px; font-weight: normal;" href="http://scarky.com" target="_parent">Scarky.com </a>
+<br>
+Powered by SPOJ Engine</a> &#169; <a alt="Sphere Research Labs" title="Sphere Research Labs" style="text-decoration:none; border: 0px;  font-weight: normal;"  href="http://www.sphere-research.com" target="_parent">Sphere Research Labs</a></div>
+</td>
+</tr>
+</table></p>
+
+      </div><!-- /#ads -->
+      
+    </div><!-- /.widget -->
+    
+    <script type="text/javascript"><!--
+	function PopUp(ref, height, width)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no,scrollbars=yes,resizable=yes,height="+height+",width="+width;
+		newWin = window.open(ref,"TellObj",strFeatures);
+	    newWin.opener = top;
+	}
+	--></script>
+    
+   
+    <script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-10507872-2");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	
+    
+  </body>
+</html>

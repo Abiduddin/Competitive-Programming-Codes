@@ -1,0 +1,28 @@
+Student name:  Md. Abid uddin	Student roll:  C151085
+cse-2301: 4.00
+cse-2302: 4.00
+cse-2303: 3.50
+cse-2304: 3.75
+cse-2305: 3.25
+cse-2306: 3.50
+chem-2301: 3.00
+math-2301: 2.75
+uris-2303: 2.25
+
+Total CGPA: 3.32
+
+
+Student name:       Md. Arif 	Student roll:  C151081
+cse-2301: 4.00
+cse-2302: 3.75
+cse-2303: 4.00
+cse-2304: 4.00
+cse-2305: 3.50
+cse-2306: 4.00
+chem-2301: 4.00
+math-2301: 3.75
+uris-2303: 4.00
+
+Total CGPA: 3.87
+
+

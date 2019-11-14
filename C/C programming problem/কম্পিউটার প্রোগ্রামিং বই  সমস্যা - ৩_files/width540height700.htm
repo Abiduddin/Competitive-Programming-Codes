@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Widget</title>
+    
+    <link rel="stylesheet" href="/gfx/styles/widget.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/themes/tooltips.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/gfx/jquery.js"></script>
+<script type="text/javascript" src="/gfx/jquery.form.js"></script>
+<script type="text/javascript" src="/gfx/scripts/widget.js"></script>
+<script type='text/javascript' src='/gfx/jquery.bgiframe.js'></script>
+<script type='text/javascript' src='/gfx/jquery.tooltip.js'></script>
+<script type='text/javascript' src='/gfx/jquery.cxhelp.js'></script>
+
+	    
+    <style type="text/css" media="screen">
+      /* ignore these styles */
+      /* body { padding: 0 5px; }
+      .widget { float: left; margin: 10px 5px; }*/
+      /* stop ignoring */
+    </style>
+    <style type="text/css" media="screen">
+    <!--
+      /* width of the widget
+         width = param - ($border_width * 2)
+          where $border_width = 1
+       */
+      .width { width: 538px; } /* example param = 300 */
+      
+      /* width of the viewport.
+         width = param * $panel_count
+           where $panel_count = 5
+       */
+      .width-all { width: 2690px; } /* example param = 300 */
+      
+      /* height of the widget. 
+         height = param - ($border_width * 2) - $ad_height - $tabs_height
+          where $border_width = 1
+                $ad_height = 40
+                $tabs_height = 30
+      */
+      .height { height: 628px; } /* example param = 300 */
+      .height_swf { height: 588px; }
+    -->
+    </style>
+
+    <script type="text/javascript">
+    <!--
+    
+      var widget_width = 538; // like above in CSS
+      var widget_login = 'Login';
+      var widget_author = 'Author';
+      var referer = "http://cpbook.subeen.com/2012/11/count-numbers.html";
+      var scene = "PHA%2B4KaP4KaVIOCmsuCmvuCmh%2BCmqOCnhyDgpoXgpqjgp4fgppXgppfgp4HgprLgp4sg4Ka44KaC4KaW4KeN4Kav4Ka%2BIOCmpuCnh%2BCmk%2BCnn%2BCmviDgpqXgpr7gppXgpqzgp4fgpaQg4Ka44KaC4KaW4KeN4Kav4Ka%2B4KaX4KeB4Kay4KeL4KawIOCmruCmp%2BCnjeCmr%2BCnhyDgpo/gppUg4Kas4Ka%2BIOCmj%2BCmleCmvuCmp%2BCmv%2BCmlSDgprjgp43gpqrgp4fgprgg4KaV4KeN4Kav4Ka%2B4Kaw4KeH4KaV4KeN4Kaf4Ka%2B4KawIOCmpeCmvuCmleCmrOCnh%2BClpCDgprLgpr7gpofgpqjgp4cg4Kau4KeL4KafIOCmleCnn%2BCmn%2BCmvyDgprjgpoLgppbgp43gpq/gpr4g4KaG4Kab4KeHIOCmuOCnh%2BCmn%2BCmvyDgpqzgp4fgprAg4KaV4Kaw4Kak4KeHIOCmueCmrOCnh%2BClpDwvcD48YnIvPjxoMz7gpofgpqjgpqrgp4Hgpp88L2gzPjxici8%2BPHA%2B4Kaq4KeN4Kaw4Kal4KauIOCmsuCmvuCmh%2BCmqOCnhyDgpo/gppXgpp/gpr8g4Ka44KaC4KaW4KeN4Kav4Ka%2BIOCmpeCmvuCmleCmrOCnh%2BClpCDgpqTgpr7gprDgpqrgprAg4Ka44KeH4KaHIOCmuOCmguCmluCnjeCmr%2BCmvuCmn%2BCmv%2BCmsCDgpq7gpr7gpqgg4Kav4KakLCDgpqTgpqTgpp/gpr8g4Kay4Ka%2B4KaH4KaoIOCmpeCmvuCmleCmrOCnh%2BClpCDgpqrgp43gprDgpqTgpr8g4Kay4Ka%2B4KaH4Kao4KeHIOCmj%2BCmlSDgpqzgpr4g4KaP4KaV4Ka%2B4Kan4Ka/4KaVIOCmuOCmguCmluCnjeCmr%2BCmviDgpqXgpr7gppXgpqzgp4cg4Kav4Ka%2B4Kam4KeH4KawIOCmquCmsOCmruCmruCmvuCmqCAxMDAwMDAwMC3gpo/gprAg4Kas4KeH4Ka24Ka/IOCmueCmrOCnhyDgpqjgpr7gpaQg4KaP4KaV4Kaf4Ka/IOCmsuCmvuCmh%2BCmqOCnh%2BCmsCDgprjgpoLgppbgp43gpq/gpr7gppfgp4HgprLgp4vgprAg4Kau4Ka%2B4Kad4KeHIOCmj%2BCmlSDgpqzgpr4g4KaP4KaV4Ka%2B4Kan4Ka/4KaVIOCmuOCnjeCmquCnh%2BCmuCDgppXgp43gpq/gpr7gprDgp4fgppXgp43gpp/gpr7gprAg4Kal4Ka%2B4KaV4Kas4KeH4KWkPC9wPjxici8%2BPGgzPuCmhuCmieCmn%2BCmquCngeCmnzwvaDM%2BPGJyLz48cD7gpqrgp43gprDgpqTgpr8g4Kay4Ka%2B4KaH4Kao4KeHIOCmleCnn%2BCmn%2BCmvyDgprjgpoLgppbgp43gpq/gpr4g4KaG4Kab4KeHIOCmuOCnh%2BCmn%2BCmvyDgpqrgp43gprDgpr/gpqjgp43gpp8g4KaV4Kaw4Kak4KeHIOCmueCmrOCnh%2BClpCA8L3A%2BPGJyLz48aDM%2B4KaJ4Kam4Ka%2B4Ka54Kaw4KajPC9oMz48YnIvPjxwcmU%2BPHN0cm9uZz7gpofgpqjgpqrgp4Hgpp86PC9zdHJvbmc%2BPGJyIC8%2BPGJyLz40PGJyLz4xICAtMiAxMDAwMCAtNTAgMjAgNyA0NDU8YnIvPjk8YnIvPi05OCA4NzYgNjU8YnIvPjIyMyAgIDk4NzY0NTIgIDIxMjxici8%2BPGJyIC8%2BPGJyIC8%2BPGJyLz48c3Ryb25nPuCmhuCmieCmn%2BCmquCngeCmnzo8L3N0cm9uZz48YnIgLz48YnIvPjc8YnIvPjE8YnIvPjM8YnIvPjM8YnIvPjxici8%2BPGJyLz48L3ByZT48YnIvPg==";
+      var ptype = "programming";
+      var pcode = "PMQ9THB0";
+    -->
+    </script>
+    
+  </head>
+  <body>
+    
+    <div class="widget width height">
+      <form id="answer-form" action="/widget/send/PMQ9THB0/" enctype="multipart/form-data" method="post">
+      <div id="viewport" class="width-all">
+
+        <div id="challenge" class="panel width height">
+          <div class="crop">
+            <h1><a href="http://scarky.com" target="_parent" class="logo"><span class="logo"></span></a></h1>
+            	            <h2 class="header">
+	            	সংখ্যা গণনা
+	            	<span style="font-size: 70%">
+	            		Programming	            			            			            			            			            		 
+	            		Challenge
+	            	</span>
+	            </h2>
+	            	            <p><p>এক লাইনে অনেকগুলো সংখ্যা দেওয়া থাকবে। সংখ্যাগুলোর মধ্যে এক বা একাধিক স্পেস ক্যারেক্টার থাকবে। লাইনে মোট কয়টি সংখ্যা আছে সেটি বের করতে হবে।</p><br/><h3>ইনপুট</h3><br/><p>প্রথম লাইনে একটি সংখ্যা থাকবে। তারপর সেই সংখ্যাটির মান যত, ততটি লাইন থাকবে। প্রতি লাইনে এক বা একাধিক সংখ্যা থাকবে যাদের পরমমান 10000000-এর বেশি হবে না। একটি লাইনের সংখ্যাগুলোর মাঝে এক বা একাধিক স্পেস ক্যারেক্টার থাকবে।</p><br/><h3>আউটপুট</h3><br/><p>প্রতি লাইনে কয়টি সংখ্যা আছে সেটি প্রিন্ট করতে হবে। </p><br/><h3>উদাহরণ</h3><br/><pre><strong>ইনপুট:</strong><br /><br/>4<br/>1  -2 10000 -50 20 7 445<br/>9<br/>-98 876 65<br/>223   9876452  212<br/><br /><br /><br/><strong>আউটপুট:</strong><br /><br/>7<br/>1<br/>3<br/>3<br/><br/><br/></pre><br/></p>
+	                                  </div>
+        </div><!-- /#question -->
+        
+		<div id="info" class="panel width height">
+					<div class="crop">
+				<h1><a href="http://scarky.com" taget="_parent"><span class="logo"></span></a></h1>
+				<h2 class="header">
+					সংখ্যা গণনা
+					<span style="font-size: 70%">
+						Programming																								 
+						Challenge
+					</span>
+				</h2>
+				<div class="grid">
+					<label>Resource</label>
+					<span class="field">
+						<a href="http://cpbook.subeen.com" target="_parent">cpbook.subeen.com</a>
+					</span>
+				</div>
+				<div class="grid">
+					<label>Starts</label>
+					<span class="field">
+						14 November 2012 5:50
+					</span>
+				</div>
+				<div class="grid">
+					<label>Ends</label>
+					<span class="field">
+						never					</span>
+				</div>
+				<div class="grid">
+					<label>Submissions</label>
+					<span class="field">
+						1272
+					</span>
+				</div>
+				<div class="grid">
+					<label>First submission</label>
+										<span class="field" title="2012-11-14 05:54">
+						1035&nbsp;days&nbsp;ago
+					</span>
+									</div>
+				<div class="grid">
+					<label>Last submission</label>
+										<span class="field" title="2015-09-14 20:33">
+						10&nbsp;hours&nbsp;ago
+					</span>
+									</div>
+				<div class="grid">
+					<label>Author's site</label>
+					<span class="field">
+						<a href="http://cpbook.subeen.com" target="_parent">cpbook.subeen.com</a>
+					</span>
+				</div>
+				<div class="grid">
+					<span class="field">
+						<br/>
+						<a target="_parent" href="http://www.scarky.com/stats/sites/site=2320">See this author's other challenges</a>
+					</span>
+				</div>
+			</div>
+		 
+		</div><!-- /#info -->
+
+		
+        <div id="answer" class="panel width height" action="/widget/send/PMQ9THB0/" enctype="multipart/form-data" method="post">
+		          <div class="crop">
+          		            <div id="answer-text" class="block ">
+	              <span class="label">
+	                <label for="solution">
+	                	Paste the answer here
+	                </label>
+	                	                <span class="toggle"><a href="">Upload a file</a> instead</span>
+						              </span>
+	              <textarea id="solution" name="file" rows="8" cols="40"></textarea>
+	            </div><!-- /#answer-text -->
+	
+	            <div id="answer-file" class="block hidden">
+	              <span class="label">
+	                <label for="file">
+	                	Upload a file
+	                </label>
+	                <span class="toggle">No, <a href="">Paste the answer</a></span>
+	
+	              </span>
+	              <span class="field"><input type="file" id="file" name="subm_file" /></span>
+	            </div><!-- /#answer-upload -->
+	
+	
+											            <div class="grid ">
+		              <label for="language">Language</label>
+		              <span class="field">
+		                <select id="language" name="lang">
+		                		                	<option value="11">C</option>
+		                		                	<option value="1">C++</option>
+		                		                </select>
+		              </span>          
+		            </div>
+		            	            			            <div class="grid">
+              <label id="author-label" for="author">Author</label>
+              <span class="field"><input type="text" id="author" name="author" value="" /></span>
+            </div>
+			
+            <div id="is-account" class="grid hidden">
+              <label for="password">Password</label>
+              <span class="field"><input type="password" id="password" name="password" value="" /></span>
+            </div>
+            
+            <div id="is-secretphrase" class="grid hidden">
+              <label for="secretphrase">Secret phrase:</label>
+              <span class="field"><input type="text" id="secretphrase" name="secretphrase" value="" /></span>
+            </div>
+			
+            <div class="block indent">
+              <label for="account"><input type="checkbox" id="account" name="account" value="1"/> Reserve this nick for me</label>
+              <img src="/gfx/styles/i/button-info.png" onclick="JavaScript:PopUp('http://blog.scarky.com/?p=257#pass', 350, 790)"/>
+            </div>
+            
+            <div class="block indent">
+              <label for="secretphrase"><input type="checkbox" id="secretphrase_cb" name="secretphrase_cb" value="1"/> Give a secret phrase</label>
+              <img src="/gfx/styles/i/button-info.png" onclick="JavaScript:PopUp('http://blog.scarky.com/?p=257#secret', 350, 790)"/>
+            </div>
+
+            <div class="submit indent">
+              <input type="hidden" id="answer-type" name="answer-type" value="text" />
+              <input type="submit" id="btnSubmit" value="Send this answer" />
+            </div>
+          </div>
+		        </div><!-- /#answer -->
+
+        <div id="hall-of-fame" class="panel width height">
+        	
+			<div class="crop">
+			  <div id="hof-content"></div>
+			</div>
+		 
+        </div><!-- /#hall-of-fame -->
+        
+        <div id="submission" class="panel width height">
+        	<div class="crop">
+            	<h1>Your submission</h1>
+            </div>
+            <br/><br/>
+        	<center>
+        		<h2 id="status">waiting...</h2>
+        	</center>
+        </div><!-- /#solution -->
+        
+      </div><!-- /#viewport -->
+      <input type="hidden" name="referer" value="http://cpbook.subeen.com/2012/11/count-numbers.html"/>
+      </form>
+
+      
+      <ul id="tabs">
+        <li class="current"><span><a href="#challenge">Challenge</a></span></li>
+        <li><span><a href="#info">Info</a></span></li>
+        <li id="li_answer"><span><a href="#answer">Answer</a></span></li>
+        <li class="extra"><span><a href="#hall-of-fame" id="btnHallOfFame">Hall of Fame</a></span></li>
+        <li class="extra" style="display:none"><span><a href="#submission" id="btnSubmission">Submission</a></span></li>
+      </ul>
+      
+      <div id="ads">
+        <p><table border=0 width=99%>
+<tr>
+<td align=left>
+<a target="_parent" title="Your great ideas will be born here" alt="ideone.com" style="border-bottom: 0px;" href="http://ideone.com"><img border=0 src="//scarky.com/content/default/ideone-mini.png"></a>
+</td>
+<td>
+<div style="text-align: right; font-size: 10px;">Find more challenges on <a style="text-decoration:none; border: 0px; font-weight: normal;" href="http://scarky.com" target="_parent">Scarky.com </a>
+<br>
+Powered by SPOJ Engine</a> &#169; <a alt="Sphere Research Labs" title="Sphere Research Labs" style="text-decoration:none; border: 0px;  font-weight: normal;"  href="http://www.sphere-research.com" target="_parent">Sphere Research Labs</a></div>
+</td>
+</tr>
+</table></p>
+
+      </div><!-- /#ads -->
+      
+    </div><!-- /.widget -->
+    
+    <script type="text/javascript"><!--
+	function PopUp(ref, height, width)
+	{	
+		var strFeatures="toolbar=no,status=no,menubar=no,location=no,scrollbars=yes,resizable=yes,height="+height+",width="+width;
+		newWin = window.open(ref,"TellObj",strFeatures);
+	    newWin.opener = top;
+	}
+	--></script>
+    
+   
+    <script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-10507872-2");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+
+Student name:           abid	Student roll:   c1777
+
+  cse-2301: 4.00
+  cse-2302: 3.75
+  cse-2303: 4.00
+  cse-2304: 4.00
+  cse-2305: 4.00
+  cse-2306: 4.00
+ math-2301: 3.75
+ chem-2301: 4.00
+ uris-2303: 4.00
+     total: 3.95
+
+Student name:            ggg	Student roll:    gg44
+
+  cse-2301: 0.00
+  cse-2302: 3.75
+  cse-2303: 4.00
+  cse-2304: 4.00
+  cse-2305: 4.00
+  cse-2306: 3.75
+ math-2301: 3.50
+ chem-2301: 0.00
+ uris-2303: 3.50
+     total: 2.61

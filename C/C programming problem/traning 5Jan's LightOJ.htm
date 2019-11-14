@@ -1,0 +1,715 @@
+<html><head>
+		<title>Jan's LightOJ</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="traning%205Jan%27s%20LightOJ_files/style.css">
+	</head>
+
+	<body lang="EN-US">
+<style>
+div.tempMessage {
+  float: left;
+  font-size: 30;
+  margin-top: 10px;
+  margin-left: 300px;
+  position: absolute;
+  border: 2px solid white;
+  background: yellow;
+  border-radius: 5px;
+  padding: 2px;
+}
+div.tempMessage a {
+  text-decoration: underline;
+  color: red;
+}
+</style>
+<div class="topDiv">
+			<img src="traning%205Jan%27s%20LightOJ_files/main.png" class="topImage" style="float: left;">
+                <!--<div class="tempMessage"><a href="http://lightoj.com/lightojv2/contest/215/problems" target=_blank>ACM ICPC Dhaka Regionals Online Preliminary Contest is scheduled here.</a></div>!-->
+			<div class="topMenuMessage" style="display: block; float: right; padding: 50 5 0 0;">
+				Server Time:
+				<a class="top_link" target="_blank" href="http://www.timeanddate.com/worldclock/fixedtime.html?iso=20150918T024922">
+					Fri Sep 18, 2015 8:49 am				</a>
+			</div>
+		</div>
+		<div class="topMenu" align="center">
+			<table width="100%">
+				<tbody><tr>
+					<td width="10%">
+						<div class="topMenuMessage">
+							&nbsp;<a class="top_link" href="http://lightoj.com/index.php">
+								Home
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/volume_problemset.php">
+								Volume
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/contest_index.php">
+								Contest
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/article_showcategory.php">Training</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/forum_index.php">Community</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/credits_index.php">Credits</a>
+						</div>
+					</td>
+					<td align="right" width="60%">
+						<div class="topMenuMessage">
+							Welcome
+								<a class="top_link" href="http://lightoj.com/index_edituser.php">
+									md. abid								</a>
+							(<a class="top_link" href="http://lightoj.com/login_logout.php">
+								logout
+							</a>)&nbsp;
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div id="wrapper">
+			<div id="problem">
+				<div id="problem_name">
+					Finding Divisors				</div>
+				<div style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;" align="center">
+					<table id="mytable" style="width:110;padding: 5 0 5 0;" cellspacing="0">
+						<tbody><tr><td class="two" style="border-top: 1px solid #C1DAD7;border-left: 1px solid #C1DAD7;" width="100">
+							<a class="user_link" href="http://lightoj.com/article_show.php?article=1003&amp;language=english&amp;type=pdf">
+								PDF (English)							</a>
+						</td>
+					</tr></tbody></table>
+				</div>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Generator" content="Microsoft Word 12 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+
+
+
+
+<div class="Section1">
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Finding Divisors,</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Number of
+Divisors</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">and</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Summation of
+Divisors</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">by</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Jane
+Alam Jan</span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:16.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span></b>
+
+<p class="MsoNormal"><b><span style="font-size:16.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:18.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Finding
+Divisors</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+we observe the property of the numbers, we will find some interesting facts. Suppose
+we have a number 36.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 1, 2, 3, 4, 6, 9, 12, 18 and 36. It is clear that if <i>a</i>
+is divisible by <i>b</i>, then <i>a</i> is also divisible by <i>(a/b</i>). That
+means, 36 is divisible by 3, so, this property helps us to find that 36 will
+also be divisible by 12 <i>(36/3)</i>. Now we will make two lists, if <i>a</i>
+is divisible by <i>b</i>, then we will take <i>b</i> into the first list and <i>(a/b)</i>
+into the second list.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+for 36, we will evaluate our idea.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 1. So, it will be added in list 1, and (36/1) = 36 will be added
+in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 2. So, it will be added in list 1, and (36/2) = 18 will be
+added in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 3. So, it will be added in list 1, and (36/3) = 12 will be
+added in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2 3</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18 12</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 4. So, it will be added in list 1, and (36/4) = 9 will be added
+in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2 3 4</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18 12 9</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 6. So, it will be added in list 1, and (36/6) = 6 will be added
+in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2 3 4 6</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18 12 9 6</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+see that if we move further we will find the numbers again (some numbers from
+list 2, which will try to insert into list 1) So, it is clear that, if we have
+list 1, we can generate list 2 (from this position).</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+we can stop checking if we find <i>b,</i> for which <i>a/b</i> is less than or
+equal to <i>b</i>. If we try to divide by numbers greater than <i>b</i>, we would
+actually repeat the same steps. For 36, (check the lists) the next number that
+will be included to list 1 is 9, but 36/9 = 4, which is already in list 1.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we have to find <i>b</i> for which <i>a/b</i> is less than or equal to <i>b</i>.
+If we think mathematically,</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">b &gt;= a/b</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">or, b<sup>2</sup> &gt;= a</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">or, b &gt;= sqrt(a)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">so, b<b><sub>minimum</sub></b> = sqrt(a)</span></p>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+we have already found an idea to find divisors of a number in complexity - <b>sqrt(N)</b>.
+And of course, we can count them to find the number of divisors and summing
+them to find the summation of divisors.</span></p>
+
+<span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:18.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Finding
+Number of Divisors</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+we want to find the number of divisors of an integer. It can be done easily by
+finding all the divisors and finally counting them as described above. But
+there is a simpler idea. If we know the prime factorization of a number, we can
+easily find the number of divisors.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">For
+example, 18 has 6 divisors. If we prime factorize 18, we find that</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">18 = 2<sup>1</sup>
+* 3<sup>2</sup></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+can say that any divisor of 36 should be in the form</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2<sup>x</sup>
+* 3<sup>y</sup> where <span style="color:red">0</span> &lt;= x &lt;= <span style="color:red">1</span> and <span style="color:red">0</span> &lt;= y &lt;= <span style="color:red">2</span></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">This
+can be proved easily, but if we think a bit we will find that the reason is
+obvious.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+the divisors are,</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> = 1</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span> = 3</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#F79646">3<sup>2</sup></span> = 9</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> = 2</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span> = 6</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;;color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;"> * <span style="color:#F79646">3<sup>2</sup></span>
+= 18</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">That means we are taking all possible solutions. These
+form the number of divisors. Just see the pattern of the prime factors of the
+divisors. So, we can say that the number of divisors of 18 is</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">(1 + 1) *
+(2 + 1) = 6</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">So, if a number is factorized as</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2<sup>x</sup>
+* 3<sup>y</sup></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Then
+the number of divisors is </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">(x+1) * (y+1)</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">. Again, the
+reason is</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050"><img id="Picture 1" src="traning%205Jan%27s%20LightOJ_files/a1.png" height="372" width="289"></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+there are </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">(x+1)</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> sections each having </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">(y+1)</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+divisors, which means a total of </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">(x+1) * (y+1)</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+divisors.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+let's find the total number of divisors of 60.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">60 = 2<sup>2</sup>
+* 3 * 5</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+similarly the divisors are</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> = 1</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span> = 5</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> = 3</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span> = 15</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> = 2</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span> = 10</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> = 6</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span> = 30</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#365F91">2<sup>2</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> = 4</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#365F91">2<sup>2</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span> = 20</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#365F91">2<sup>2</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> = 12</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;;color:#365F91">2<sup>2</sup></span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;"> * <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span> = 60</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+total number of divisors is 12. Let's check it in another way.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">For
+each section of </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">2 (2<sup>0</sup>, 2<sup>1</sup> or 2<sup>2</sup>)</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+the number of divisors are same. So, there are </span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+sections for </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">. Now for each section of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+there are two sections for </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">3 (3<sup>0</sup>, 3<sup>1</sup>)</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+Now for any combination of </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+there are two sections for </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">5 (5<sup>0</sup>, 5<sup>1</sup>)</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+So, it can be represented as</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">(<span style="color:#00B050">2<sup>0</sup></span>, </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">, <span style="color:#365F91">2<sup>2</sup></span>) and (<span style="color:#00B0F0">3<sup>0</sup></span>,
+<span style="color:#948A54">3<sup>1</sup></span>) and (<span style="color:#7030A0">5<sup>0</sup></span>,
+<span style="color:#9BBB59">5<sup>1</sup></span>)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+at first take any power of </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, after that take any
+power of </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and after that take any power of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+from the above sections. So, we can take </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> in three ways, </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+in two ways and </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> in two ways. So, total ways (or
+total divisors) are</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">3
+* 2 * 2</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">= 12</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Similarly,
+suppose a number is factorized as </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">2<sup>x</sup> * 3<sup>y </sup>* 5<sup>z</sup></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+so, the total number of divisors is</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">(x + 1) *
+(y + 1) * (z + 1)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;Now,
+the general formula is</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+the prime factorization of an integer is</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">p<sub>1</sub><sup>x1</sup>
+* p<sub>2</sub><sup>x2</sup> * p<sub>3</sub><sup>x3</sup> * ... * p<sub>n</sub><sup>xn</sup></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">where,
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">p<sub>1</sub>,
+p<sub>2</sub>, ..., p<sub>n </sub></span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">are primes, then the
+number of divisors is</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">(x<sub>1</sub>
++ 1) * (x<sub>2</sub> + 1) * (x<sub>3</sub> + 1) * ... * (x<sub>n</sub> + 1)</span></p>
+
+<span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:18.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Finding
+Summation of Divisors</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Suppose
+we want to find the summation of all the divisors of an integer. We can do it
+by finding all the divisors and then summing them. But we can make it better.
+The idea is as follows.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Let's
+say we want to find the summation of divisors of 60. From previous section, we
+know that the divisors are </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+and </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">60</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">;
+so the summation is </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">168</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">. The summation can be written as
+(summing up all the divisors in their factorized form),</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#00B050">2<sup>0</sup></span>
+* <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span>
++ <span style="color:#00B050">2<sup>0</sup></span> * <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#00B050">2<sup>0</sup></span>
+* <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span>
++ </span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#C00000">2<sup>1</sup></span>
+* <span style="color:#00B0F0">3<sup>0</sup></span></span><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;"> * <span style="color:#9BBB59">5<sup>1</sup></span>
++ <span style="color:#C00000">2<sup>1</sup></span> * <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#C00000">2<sup>1</sup></span>
+* <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span>
++</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;;color:#365F91">2<sup>2</sup></span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;"> * <span style="color:#00B0F0">3<sup>0</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#365F91">2<sup>2</sup></span>
+* <span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span>
++ <span style="color:#365F91">2<sup>2</sup></span> * <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#365F91">2<sup>2</sup></span>
+* <span style="color:#948A54">3<sup>1</sup></span> * <span style="color:#9BBB59">5<sup>1</sup></span></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">It can be written as,</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#00B050">2<sup>0</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * (<span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#00B0F0">3<sup>0</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span>) +</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;;
+color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;font-family:
+&quot;Courier New&quot;"> * (<span style="color:#00B0F0">3<sup>0</sup></span> * <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#00B0F0">3<sup>0</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span>) +</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;;color:#365F91">2<sup>2</sup></span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;"> * (<span style="color:#00B0F0">3<sup>0</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#00B0F0">3<sup>0</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span>)</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">can be written as</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">(<span style="color:#00B050">2<sup>0</sup></span> + </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;"> + <span style="color:#365F91">2<sup>2</sup></span>) * (<span style="color:#00B0F0">3<sup>0</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#00B0F0">3<sup>0</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#948A54">3<sup>1</sup></span>
+* <span style="color:#9BBB59">5<sup>1</sup></span>)</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">can be written as</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">(<span style="color:#00B050">2<sup>0</sup></span> + </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;"> + <span style="color:#365F91">2<sup>2</sup></span>) * (<span style="color:#00B0F0">3<sup>0</sup></span>
+* (<span style="color:#7030A0">5<sup>0</sup></span> + <span style="color:#9BBB59">5<sup>1</sup></span>)
++ <span style="color:#948A54">3<sup>1</sup></span> * (<span style="color:#7030A0">5<sup>0</sup></span>
++ <span style="color:#9BBB59">5<sup>1</sup></span>))</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">can be written as</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">(<span style="color:#00B050">2<sup>0</sup></span> + </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">2<sup>1</sup></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;"> + <span style="color:#365F91">2<sup>2</sup></span>) * (<span style="color:#00B0F0">3<sup>0</sup></span>
++ <span style="color:#948A54">3<sup>1</sup></span>) * (<span style="color:#7030A0">5<sup>0</sup></span>
++ <span style="color:#9BBB59">5<sup>1</sup></span>)</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">Now, we know that the summation of series</span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><img src="traning%205Jan%27s%20LightOJ_files/a2.png" height="55" width="415"></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">So, the summation can be written as</span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><img src="traning%205Jan%27s%20LightOJ_files/a3.png" height="55" width="405"></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">So, the result is same as we have calculated.</span></p>
+
+<span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">So, if the prime factorization of an integer is</span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><img src="traning%205Jan%27s%20LightOJ_files/a4.png" height="29" width="201"></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">where,
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">p<sub>1</sub>,
+p<sub>2</sub>, ..., p<sub>n </sub></span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">are primes, then the summation
+of divisors is</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:11.0pt;line-height:115%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><img src="traning%205Jan%27s%20LightOJ_files/a5.png" height="59" width="390"></span></p>
+
+<p class="MsoNormal"><b><span style="font-size:16.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Discussion</span></b></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">After finding the prime factorization, these ideas
+are easy to code. Before get to coding, try to understand them fully.</span></p>
+
+</div>
+
+
+
+
+				<hr style="color: #717171; height: .5px;">
+
+				<div id="problem_setter">
+					Author: Jane Alam Jan				</div>
+			</div>
+		</div>
+<div class="bottomDiv" align="center">
+	<table width="100%">
+		<tbody><tr>
+			<td width="50%">
+				<div class="midMessage">
+					Developed and Maintained by
+					<br><b>JANE ALAM JAN</b>
+				</div>
+
+			</td>
+			<td width="50%">
+				<div class="midMessage">
+					Copyright © 2012
+					<br><b>LightOJ, Jane Alam Jan</b>
+				</div>
+
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+	
+
+</body></html>

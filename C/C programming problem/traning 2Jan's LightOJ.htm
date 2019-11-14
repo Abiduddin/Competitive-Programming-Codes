@@ -1,0 +1,1438 @@
+<html><head>
+		<title>Jan's LightOJ</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="traning%202Jan%27s%20LightOJ_files/style.css">
+	</head>
+
+	<body lang="EN-US">
+<style>
+div.tempMessage {
+  float: left;
+  font-size: 30;
+  margin-top: 10px;
+  margin-left: 300px;
+  position: absolute;
+  border: 2px solid white;
+  background: yellow;
+  border-radius: 5px;
+  padding: 2px;
+}
+div.tempMessage a {
+  text-decoration: underline;
+  color: red;
+}
+</style>
+<div class="topDiv">
+			<img src="traning%202Jan%27s%20LightOJ_files/main.png" class="topImage" style="float: left;">
+                <!--<div class="tempMessage"><a href="http://lightoj.com/lightojv2/contest/215/problems" target=_blank>ACM ICPC Dhaka Regionals Online Preliminary Contest is scheduled here.</a></div>!-->
+			<div class="topMenuMessage" style="display: block; float: right; padding: 50 5 0 0;">
+				Server Time:
+				<a class="top_link" target="_blank" href="http://www.timeanddate.com/worldclock/fixedtime.html?iso=20150918T024916">
+					Fri Sep 18, 2015 8:49 am				</a>
+			</div>
+		</div>
+		<div class="topMenu" align="center">
+			<table width="100%">
+				<tbody><tr>
+					<td width="10%">
+						<div class="topMenuMessage">
+							&nbsp;<a class="top_link" href="http://lightoj.com/index.php">
+								Home
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/volume_problemset.php">
+								Volume
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/contest_index.php">
+								Contest
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/article_showcategory.php">Training</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/forum_index.php">Community</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/credits_index.php">Credits</a>
+						</div>
+					</td>
+					<td align="right" width="60%">
+						<div class="topMenuMessage">
+							Welcome
+								<a class="top_link" href="http://lightoj.com/index_edituser.php">
+									md. abid								</a>
+							(<a class="top_link" href="http://lightoj.com/login_logout.php">
+								logout
+							</a>)&nbsp;
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div id="wrapper">
+			<div id="problem">
+				<div id="problem_name">
+					Generating Primes (Part 1)				</div>
+				<div style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;" align="center">
+					<table id="mytable" style="width:110;padding: 5 0 5 0;" cellspacing="0">
+						<tbody><tr><td class="two" style="border-top: 1px solid #C1DAD7;border-left: 1px solid #C1DAD7;" width="100">
+							<a class="user_link" href="http://lightoj.com/article_show.php?article=1001&amp;language=english&amp;type=pdf">
+								PDF (English)							</a>
+						</td>
+					</tr></tbody></table>
+				</div>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Generator" content="Microsoft Word 12 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:Consolas;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:#1F497D;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:Consolas;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman","serif";
+	color:#1F497D;
+	font-weight:bold;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+
+
+
+
+<div class="Section1">
+
+<p class="MsoNormal" style="line-height:normal"><b><span style="font-size:24.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="line-height:normal"><b><span style="font-size:24.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="line-height:normal"><b><span style="font-size:24.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="line-height:normal"><b><span style="font-size:24.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="line-height:normal"><b><span style="font-size:24.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sieve of
+Eratosthenes</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:18.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(Generating Primes)</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">by</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Jane
+Alam Jan<br style="page-break-before:always" clear="all">
+</span></b></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Introduction</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Before
+starting the problem, you have to understand how to generate primes. This
+document contains some ideas and observations that make a naïve algorithm to a
+better one.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+first task is to know what is a <i>prime</i>. Before advancing, we should
+understand the word ‘<b>divisible</b>’.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">An
+integer ‘<i>a’</i> is said to be <b><i>divisible</i></b> by an integer ‘<i>b’</i>
+if we divide <i>a</i> by <i>b</i>, the reminder is zero. For example 20 is
+divisible by 5, 26 is divisible by 2, 30 is <b>not</b> divisible by 16. Or we
+can say that <i>a</i> is divisible by <i>b</i> if <i>a</i> can be written as <i>b
+* k</i> where <i>k</i> is an integer.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">A
+<i>prime</i> number is an integer which is <i>divisible</i> by exactly two
+different integers. By definition, we see that 1 is not a prime. Since we need
+two different integers, but 1 is only divisible by 1. So, 5 is a <i>prime</i>,
+because it is divisible by two different integers - 1 and 5. 49 is <b>not</b> a
+<i>prime</i> because it is divisible by 1, 7 and 49 (three different integers).</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+problem is - we have to generate <i>primes</i> from 1 to <b><i>N</i></b>. But
+how to generate <i>primes</i>?</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 1 (divide by all possible numbers)</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+have to check whether a number is a <i>prime</i> or not. A number <i>P</i> is
+said to be <i>prime</i> if it is not divisible by any integer from <i>2</i> to <i>P-1</i>.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> N = 5000;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">bool</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> isPrime( <span style="color:blue">int</span>
+i ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( <span style="color:blue">int</span> j = 2; j &lt; i; j++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>( i
+% j == 0 ) <span style="color:green">// i is divisible by j, so i is not a
+prime</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span>
+<span style="color:blue">false</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// No integer
+less than i, divides i, so, i is a prime</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:blue">true</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( <span style="color:blue">int</span> i = 2; i &lt;= N; i++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+isPrime(i) == <span style="color:blue">true</span> )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"%d
+"</span>, i);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">This
+code will generate all the primes up to 5000. But if we see carefully, we will
+find that to check any number we have to divide it by all the numbers smaller
+to it. So, for 3, we will try to divide 3 by 2. For 7, we will try to divide it
+by 2, 3, 4, 5, 6. So, this method is slow, because so many divisions and checks
+are required.</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 2 (divide up to square root)</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+we observe the property of the numbers, we will find some interesting facts.
+Suppose we have a number 36.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 1, 2, 3, 4, 6, 9, 12, 18 and 36. It is clear that if <i>a</i>
+is divisible by <i>b</i>, then <i>a</i> is also divisible by <i>(a/b</i>). That
+means, 36 is divisible by 3, so, this property helps us to find that 36 will
+also be divisible by 12 <i>(36/3)</i>. Now we will make two lists, if <i>a</i>
+is divisible by <i>b</i>, then we will take <i>b</i> into the first list, <i>(a/b)</i>
+and into the second list.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+for 36, we will evaluate our idea.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 1. So, it will be added in list 1, and (36/1) = 36 will be
+added in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 2. So, it will be added in list 1, and (36/2) = 18 will be
+added in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 3. So, it will be added in list 1, and (36/3) = 12 will be
+added in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2 3</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18 12</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 4. So, it will be added in list 1, and (36/4) = 9 will be added
+in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2 3 4</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18 12 9</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">36
+is divisible by 6. So, it will be added in list 1, and (36/6) = 6 will be added
+in list 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#00B050">List
+1: 1 2 3 4 6</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">List
+2: 36 18 12 9 6</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+see that if we move further we will find the numbers again (some numbers from
+list 2, which will try to insert into list 1) So, it is clear that, if we have
+list 1, we can generate list 2 (from this position).</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+we can stop checking if we find <i>b</i> for which <i>a/b</i> is less than or
+equal to <i>b</i>. Cause if we try to divide by numbers greater than <i>b</i>
+we will actually repeat the same steps. For 36, (check the lists) the next
+number that will be included to list 1 is 9, but 36/9 = 4, which is already in
+list 1.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we have to find <i>b</i> for which <i>a/b</i> is less than or equal to <i>b</i>.
+If we think mathematically,</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">b &gt;= a/b</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">or, b<sup>2</sup> &gt;= a</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">or, b &gt;= sqrt(a)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">so, b<b><sub>minimum</sub></b> = sqrt(a)</span></p>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+we can update our code.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> N = 5000;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">bool</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> isPrime( <span style="color:blue">int</span>
+i ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">int</span> sqrtI
+= <span style="color:blue">int</span>( sqrt( (<span style="color:blue">double</span>)
+i) );</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// dont write
+"for(int j = 2; j &lt;= sqrt(i); j++)" because sqrt is a slow</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// function.
+So, dont calculate it all the time, calculate it only once</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( <span style="color:blue">int</span> j = 2; j &lt;= sqrtI; j++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>( i
+% j == 0 ) <span style="color:green">// i is divisible by j, so i is not a
+prime</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span>
+<span style="color:blue">false</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// No integer
+less than i, divides i, so, i is a prime</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:blue">true</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( <span style="color:blue">int</span> i = 2; i &lt;= N; i++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+isPrime(i) == <span style="color:blue">true</span> )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"%d
+"</span>, i);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 3 (no need to take even numbers)</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Only
+2 is the even prime, all other primes are odd, so, we can update our algorithm.
+Firstly we will not check even numbers (<i>condition 1</i>), and secondly we
+will not use even numbers to divide (<i>condition 2</i>). Since an odd number
+can be divisible by only odd numbers.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+our new code will be like</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> N = 5000;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">bool</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> isPrime( <span style="color:blue">int</span>
+i ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">int</span> sqrtI
+= <span style="color:blue">int</span>( sqrt( (<span style="color:blue">double</span>)
+i) );</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( <span style="color:blue">int</span> j = 3; j &lt;= sqrtI; j += 2 ) { <span style="color:green">// j += 2 is given, condition (2)</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>( i
+% j == 0 ) <span style="color:green">// i is divisible by j, so i is not a
+prime</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span>
+<span style="color:blue">false</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> <span style="color:blue">true</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"2
+"</span>); <span style="color:green">// 2 is the only even prime, so,
+print it</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( <span style="color:blue">int</span> i = 3; i &lt;= N; i += 2 ) { <span style="color:green">// i += 2 is given here, condition (1)</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+isPrime(i) == <span style="color:blue">true</span> )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"%d
+"</span>, i);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp; &nbsp;<span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 4 (Sieve of Eratosthenes)</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+can easily say that, if a number is not divisible by any primes less than it,
+then it is <i>prime</i>. For example 7 is a prime because it is not divisible
+by 2, 3, or 5. Suppose a number is not <i>prime</i>, then there should be a
+prime which divides the number. We can say that 100 is not a prime and it is
+divisible by 20. We can see that 20 is divisible by 5, so 100 will also be
+divisible by 5. That means we can only check the previous primes to ensure whether
+a number is prime or not. And of course the square root bound also works here.
+Now this idea is quite hard to implement if we want to use the previous codes.
+How about we generate a new idea? </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+idea is - we will discard all the multiples. That means if we find 2, we will
+discard 4, 6, 8, … Because we are sure that if 2 is a prime, then none of its
+multiple will be.</span></p>
+
+<span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+should understand how it works, consider that we have the numbers</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2 3 4 5 6 7
+8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">And
+initially consider that all are primes. We assume that a number – ‘colored
+black’ is prime.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">At
+first we check 2 and color (discard) all multiples of 2.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2 3 <span style="color:red">4</span> 5 <span style="color:red">6</span> 7 <span style="color:red">8</span> 9 <span style="color:red">10</span> 11 <span style="color:red">12</span> 13 <span style="color:red">14</span> 15 <span style="color:red">16</span> 17 <span style="color:red">18</span> 19 <span style="color:red">20</span> 21 <span style="color:red">22</span> 23 <span style="color:red">24</span> 25</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Then
+we advance to 3, and find that it is also a prime. So, we will discard all the
+multiples of 3.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2 3 <span style="color:red">4</span> 5 <span style="color:#00B0F0">6</span> 7 <span style="color:red">8</span> <span style="color:#00B0F0">9</span> <span style="color:red">10</span> 11 <span style="color:#00B0F0">12</span> 13 <span style="color:red">14</span> <span style="color:#00B0F0">15</span> <span style="color:red">16</span> 17 <span style="color:#00B0F0">18</span> 19 <span style="color:red">20</span> <span style="color:#00B0F0">21</span> <span style="color:red">22</span> 23 <span style="color:#00B0F0">24</span> 25</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we advance to 4, but see that 4 is not a prime because it is already colored.
+So, we advance to 5 and discard its multiples.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2 3 <span style="color:red">4</span> 5 <span style="color:#00B0F0">6</span> 7 <span style="color:red">8</span> <span style="color:#00B0F0">9</span> <span style="color:#00B050">10</span> 11 <span style="color:#00B0F0">12</span> 13 <span style="color:red">14</span> <span style="color:#00B050">15</span> <span style="color:red">16</span> 17 <span style="color:#00B0F0">18</span> 19 <span style="color:#00B050">20</span> <span style="color:#00B0F0">21</span> <span style="color:red">22</span> 23 <span style="color:#00B0F0">24</span> <span style="color:#00B050">25</span></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+we continue until all cant color anymore.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+to implement the idea, we will use an array (status), which will contain 0 or
+1. If the <i>ith</i> index contains 0 then we will think that <i>i</i> is a
+prime, otherwise it is not.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> N = 5000;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> status[5001];</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">// status[i] = 0, if i is prime</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">// status[i] = 1, if i is not a
+prime</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">int</span> i, j;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;&nbsp;&nbsp; // initially we think that
+all are primes, so change the status</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+2; i &lt;= N; i++ )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; status[i] = 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+2; i &lt;= N; i++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i] == 0 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// so,
+i is a prime, so, discard all the multiples</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// j =
+2 * i is the first multiple, then j += i, will find the </span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// next
+multiple</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>(
+j = 2 * i; j &lt;= N; j += i )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; status[j] = 1; <span style="color:green">// status of the multiple is 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// print the
+primes</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+2; i &lt;= N; i++ ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i] == 0 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// so,
+i is prime</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"%d
+"</span>, i);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 5 (again, no even numbers)</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Again,
+as described in idea - 3, 2 is the only even prime, so we can update our idea.
+So, we will start from 3. Since we are dealing with only odd numbers, so, we
+will not color the even numbers. And see that the first multiple of 3 is 6,
+then we have 9, 12, 15, 18, … So, for any odd number the first multiple is
+even, the second one is odd, the third one is even, and so on. So, we can
+easily avoid even numbers.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> N = 5000;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> status[5001];</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">// status[i] = 0, if i is prime</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">// status[i] = 1, if i is not a
+prime</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">int</span> i, j;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:green">&nbsp;&nbsp;&nbsp; // initially we think that
+all are primes</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+2; i &lt;= N; i++ )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; status[i] = 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+3; i &lt;= N; i += 2 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i] == 0 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// so,
+i is a prime, so, discard all the multiples</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// 3 *
+i is odd, since i is odd. And j += 2 * i, so, the next odd</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">//
+number which is multiple of i will be found</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>(
+j = 3 * i; j &lt;= N; j += 2 * i )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; status[j] = 1; <span style="color:green">// status of the multiple is 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// print the
+primes</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"2
+"</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+3; i &lt;= N; i += 2 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i] == 0 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// so,
+i is prime</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"%d
+"</span>, i);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span></b>
+
+<p class="MsoNormal"><b><span style="font-size:16.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 6 (modified discarding technique)</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+let’s revise the discarding technique for the last code. Initially we have the
+list</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-family:&quot;Courier New&quot;">3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33
+35 37 39 41 43 45 47 49 51</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+at first we discard (or color) the multiples of 3. So, we have</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-family:&quot;Courier New&quot;">3 5 7 <span style="color:#00B050">9</span> 11
+13 <span style="color:#00B050">15</span> 17 19 <span style="color:#00B050">21</span>
+23 25 <span style="color:#00B050">27</span> 29 31 <span style="color:#00B050">33</span>
+35 37 <span style="color:#00B050">39</span> 41 43 <span style="color:#00B050">45</span>
+47 49 <span style="color:#00B050">51</span></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+the next number is 5 and the first number that will be colored is 15. But is it
+necessary to color 15? Observe that, 15 = 3 * 5, so, we are sure that 15 is
+colored already. So, we start from 25.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-family:&quot;Courier New&quot;">3 5 7 <span style="color:#00B050">9</span> 11
+13 <span style="color:#00B050">15</span> 17 19 <span style="color:#00B050">21</span>
+23 <span style="color:#C00000">25</span> <span style="color:#00B050">27</span>
+29 31 <span style="color:#00B050">33</span> <span style="color:#C00000">35</span>
+37 <span style="color:#00B050">39</span> 41 43 <span style="color:#C00000">45</span>
+47 49 <span style="color:#00B050">51</span></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+the next number is 7. The first number that will be discarded is 21. But again
+21 = 3 * 7, so, we are sure that 21 is already colored. The next number is 35
+(advancing 21 + 2 * 7 = 35), again 35 = 5 * 7, so, it’s also colored. So, then
+we have 49, and it is the first number that should be colored. So, we have</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-family:&quot;Courier New&quot;">3 5 7 <span style="color:#00B050">9</span> 11
+13 <span style="color:#00B050">15</span> 17 19 <span style="color:#00B050">21</span>
+23 <span style="color:#C00000">25</span> <span style="color:#00B050">27</span>
+29 31 <span style="color:#00B050">33</span> <span style="color:#C00000">35</span>
+37 <span style="color:#00B050">39</span> 41 43 <span style="color:#C00000">45</span>
+47 <span style="color:#0070C0">49</span> <span style="color:#00B050">51</span></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+if we have <b><i>n</i></b> as a prime, and we want to discard its multiples,
+then 3 * n is not a good choice, not even 5 * n, not even (n - 2) * n. The
+reason is all the numbers mentioned here are colored already. So, the first
+number that should be colored is <b>n<sup>2</sup></b>. So, we have to check
+primes up to square root of <b>N</b> and discard their multiples (say, we want
+to find primes up to 51, is it necessary to check the multiples of 11, or
+higher?). So, the new code will be</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> N = 5000, status[5001];</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">int</span> i, j,
+sqrtN;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+2; i &lt;= N; i++ ) status[i] = 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; sqrtN = <span style="color:blue">int</span>(
+sqrt((<span style="color:blue">double</span>) N )); <span style="color:green">//
+have to check primes up to (sqrt(N))</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+3; i &lt;= sqrtN; i += 2 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i] == 0 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// so,
+i is a prime, so, discard all the multiples</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color:green">// j =
+i * i, because it’s the first number to be colored</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>(
+j = i * i; j &lt;= N; j += i + i )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; status[j] = 1; <span style="color:green">// status of the multiple is 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// print the
+primes</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"2
+"</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+3; i &lt;= N; i += 2 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i] == 0 ) printf(<span style="color:#A31515">"%d "</span>, i);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 7 (saving memory)</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+are not considering even numbers, but we have declared memory for even numbers.
+For example we do have </span><span style="font-family:&quot;Courier New&quot;">status[2],
+status[4], status[506]</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> etc, which are completely wasted. So,
+we can easily observe that half of the allocated memories are actually of no
+use. Just think that between 1 and 100 there are 50 odd numbers and 50 even
+numbers.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we know that any odd number can be represent as <i>2 * i + 1</i> form where <i>i</i>
+is an integer. Like 3 can be represented as <i>2 * 1 + 1</i>, 11 can be
+represented as <i>2 * 5 + 1</i>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+we can update our idea with the property that if status of <i>i</i> equals 0
+then we will think that <i>2 * i + 1</i> is a prime, and then we will discard
+all multiples of <i>2 * i + 1</i>. When discarding the multiples, we will find
+the multiple in <i>2 * x + 1</i> form, and we will update the status of x. So,
+If we check the status of x, we are actually checking that <i>2 * x + 1</i> is
+a prime or not. So, for any integer <i>p</i>, we will check the status of <i>p/2</i>.
+Division is a bit costlier, so we can right shift <i>p</i> once instead of dividing
+it by 2 as we will have same results. So, the new code will be</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> N = 5000, status[2501];</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:blue">int</span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;"> main() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">int</span> i, j,
+sqrtN;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+2; i &lt;= N &gt;&gt; 1; i++ ) status[i] = 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; sqrtN = <span style="color:blue">int</span>(
+sqrt((<span style="color:blue">double</span>)N) ); <span style="color:green">//
+have to check primes up to (sqrt(N))</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+3; i &lt;= sqrtN; i += 2 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i&gt;&gt;1] == 0 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// so,
+i is a prime, so, discard all the multiples</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green">// j =
+i * i, because it’s the first number to be colored</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>(
+j = i * i; j &lt;= N; j += i + i )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; status[j&gt;&gt;1] = 1; <span style="color:green">// status of the multiple is 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:green">// print the
+primes</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"2
+"</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">for</span>( i =
+3; i &lt;= N; i += 2 ) {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">if</span>(
+status[i&gt;&gt;1] == 0 )</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(<span style="color:#A31515">"%d
+"</span>, i);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp; <span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Discussion</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+basic idea of sieve is described here. The code here may have bugs. Before you
+believe the codes, try to understand the ideas and convince yourself. Try
+solving some problems related to prime numbers.</span></p>
+
+<p class="MsoNormal"><span style="line-height:115%">&nbsp;</span></p>
+
+</div>
+
+
+
+
+				<hr style="color: #717171; height: .5px;">
+
+				<div id="problem_setter">
+					Author: Jane Alam Jan				</div>
+			</div>
+		</div>
+<div class="bottomDiv" align="center">
+	<table width="100%">
+		<tbody><tr>
+			<td width="50%">
+				<div class="midMessage">
+					Developed and Maintained by
+					<br><b>JANE ALAM JAN</b>
+				</div>
+
+			</td>
+			<td width="50%">
+				<div class="midMessage">
+					Copyright © 2012
+					<br><b>LightOJ, Jane Alam Jan</b>
+				</div>
+
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+	
+
+</body></html>

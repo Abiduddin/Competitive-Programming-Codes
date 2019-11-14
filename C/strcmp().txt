@@ -1,0 +1,7 @@
+* strcmp() compares two string.
+* If the first string and second string are same, it returns 0; for example:
+  strcmp("You","You")
+* If the first string is greater than second string it return 1; for example:
+  strcmp("you","You") [because, ascii value of 'a' is greater than 'A']
+* If the first string is less than second string it return a negative value;
+  example: strcmp("Jahangir","Mohiuddin")

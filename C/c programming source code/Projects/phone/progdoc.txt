@@ -1,0 +1,123 @@
+PHONE SERVICE VERSION 2.0a -
+Programmers Document
+Coded by: Robert Chanphakeo
+
+As a clear commented source was provided;
+This document will only state a brief outline of the methods and the logics 
+that were used in developing Phone service version 2.0a.
+
+DELETE ENTRY: (option [2] )
+How does the delete entry work?
+Example:
+To make things easier let,
+Room =1,2,3,4,5,6,7,8,9,10
+Phone=1,2,3,4,5,6,7,8,9,10
+10 entries in the database with the digits from 1 to 10 both having the same 
+values entered.
+Now the user request Room/phone "4" to be deleted, the delete entry function 
+will find the digit "4" in both room and phone matching the users request.
+
+Find -> is done within a for loop until add_count number is reached,
+Add_count is the counter for the number of entries added.
+
+Line 411: for (k=0; k < add_count; k++)
+
+If it finds the digit '4' it asks the user if he/she wants to delete the 
+current entry in the record.
+Yes will;
+1) Copy that current entry to a temp location.
+
+Line 423: Room_tmp[tot_del_entry] = room[k]
+Line 425: Phone_tmp[tot_del_entry] = phone[k]
+
+2) Then a '-1' is copied on top of the location where digit '4' was found 
+overwriting it (marking it has been deleted).
+Line 424: room[k] = -1;
+Line 426: phone[k] = -1;
+
+Tot_del_entry and del_entry is incremented by one each time this is done.
+
+Line 427: del_entry++
+Line 428: tot_del_entry++
+
+Note: That data deleted is saved in room_tmp and phone_tmp, array.
+[end of find/mark loop]
+3) Another for loop is nested within the for, used to find  '-1's' marked 
+for deleted, it loops for the no. of entries that has been deleted.
+
+Line 435: for(x=0; x < del_entry; x++)
+Line 438: if(room[k] == -1 && phone[k] == -1
+
+Calculates move up stop position.
+Line 443: loop_mov_stop = add_count - (k+1);
+
+4) Then within a while loop on LINE 444: while (loop_mov_stop != loop_mov)
+It keeps moving everything up by one position where -1 was found, it stop 
+looping when the number of move up position is meet.
+
+At the end of the while loop(outside)
+Line: 454 add_count = add_count_count - del_entry.
+It calculates the number of records exist after deleted option has been 
+used.
+
+Graphical it looks like this:
+Stage 1,2,3,4 is the actual elements in array of room and phone.
+End results: what the user see
+1st 2nd  3rd 4th on the screen! When using ListAll
+1 1 1 1 1
+2 2 2 2 2
+3 3 3 3 3
+4 -1 5 5 5
+5 5 6 6 6
+6 6 7 7 7
+7 7 8 8 8
+8 8 9 9 9
+9 9 10 10 10
+10 10 ? ?
+
+SORT FUNCTION(Option 7)
+Sort is done with the use of bubble sort.
+For both ascending/descending order.
+
+Ascending order:
+Each time the previous value is greater than the next value It swaps the two 
+values.
+Descending order:
+Uses the same principal, but
+As previous value is less than the next then it does the swap.
+This is done within a for loop.
+
+
+For all the other functions and explanation,  it is cleared commented and 
+logically explained within the source.
+Special Function
+
+The main reason why the 'Chkstrdig' function was implemented, is that it is 
+used to check the users input so that every entry added to the database 
+would be a valid input.
+
+That is not allowing the user to add in characters or negative numbers, and 
+also making sure the values entered are within acceptable range.
+
+Save on exit function was added so that information wasn't be lost each time 
+the user exited to the system. Allow him/her to save the entire database 
+into a file. Which can later be restored and loaded back up again using the 
+LOAD DATABASE from file function.
+
+The load database from file function,
+Allowing flexibility for the user to either work in RAM mode or file mode.
+
+Throughputs:
+The main menu looping I've used was a simple 'do while' and 'if' statement 
+condition.
+
+The disadvantage about this is that it requires more lines of coding than 
+just using the 'CASE' and switch statements.
+
+I have also included two arrays, room_tmp and phone_tmp which saves/stores 
+deleted entries as the user deletes an entry. This can be used as an 
+auto-recovery option as the codes has been implemented but is not in use.
+
+
+
+The line numbers are approx.

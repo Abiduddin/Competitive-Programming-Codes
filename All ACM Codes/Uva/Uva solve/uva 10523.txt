@@ -1,0 +1,24 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+
+public class uva10523 {// for submit change it to "Main"
+	public static void main(String args[]){
+		Scanner ab=new Scanner(System.in);
+		BigInteger b1,b2,b3;
+		int i,j;
+		
+		while(ab.hasNext()){
+			i=ab.nextInt();
+			b1=ab.nextBigInteger();
+			b2=BigInteger.ZERO;
+			for( ;i>0;i--){
+				b3=b1.pow(i).multiply(BigInteger.valueOf(i));
+				b2=b2.add(b3);
+			}
+			System.out.println(b2);
+		}
+		
+		
+	}
+}

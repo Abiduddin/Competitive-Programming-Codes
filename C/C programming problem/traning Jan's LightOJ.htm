@@ -1,0 +1,1575 @@
+<html><head>
+		<title>Jan's LightOJ</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="traning%20Jan%27s%20LightOJ_files/style.css">
+	</head>
+
+	<body lang="EN-US" link="blue" vlink="purple">
+<style>
+div.tempMessage {
+  float: left;
+  font-size: 30;
+  margin-top: 10px;
+  margin-left: 300px;
+  position: absolute;
+  border: 2px solid white;
+  background: yellow;
+  border-radius: 5px;
+  padding: 2px;
+}
+div.tempMessage a {
+  text-decoration: underline;
+  color: red;
+}
+</style>
+<div class="topDiv">
+			<img src="traning%20Jan%27s%20LightOJ_files/main.png" class="topImage" style="float: left;">
+                <!--<div class="tempMessage"><a href="http://lightoj.com/lightojv2/contest/215/problems" target=_blank>ACM ICPC Dhaka Regionals Online Preliminary Contest is scheduled here.</a></div>!-->
+			<div class="topMenuMessage" style="display: block; float: right; padding: 50 5 0 0;">
+				Server Time:
+				<a class="top_link" target="_blank" href="http://www.timeanddate.com/worldclock/fixedtime.html?iso=20150918T024622">
+					Fri Sep 18, 2015 8:46 am				</a>
+			</div>
+		</div>
+		<div class="topMenu" align="center">
+			<table width="100%">
+				<tbody><tr>
+					<td width="10%">
+						<div class="topMenuMessage">
+							&nbsp;<a class="top_link" href="http://lightoj.com/index.php">
+								Home
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/volume_problemset.php">
+								Volume
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/contest_index.php">
+								Contest
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/article_showcategory.php">Training</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/forum_index.php">Community</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/credits_index.php">Credits</a>
+						</div>
+					</td>
+					<td align="right" width="60%">
+						<div class="topMenuMessage">
+							Welcome
+								<a class="top_link" href="http://lightoj.com/index_edituser.php">
+									md. abid								</a>
+							(<a class="top_link" href="http://lightoj.com/login_logout.php">
+								logout
+							</a>)&nbsp;
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div id="wrapper">
+			<div id="problem">
+				<div id="problem_name">
+					Heap				</div>
+				<div style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;" align="center">
+					<table id="mytable" style="width:110;padding: 5 0 5 0;" cellspacing="0">
+						<tbody><tr><td class="two" style="border-top: 1px solid #C1DAD7;border-left: 1px solid #C1DAD7;" width="100">
+							<a class="user_link" href="http://lightoj.com/article_show.php?article=1005&amp;language=english&amp;type=pdf">
+								PDF (English)							</a>
+						</td>
+					</tr></tbody></table>
+				</div>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Generator" content="Microsoft Word 12 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:Consolas;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:#1F497D;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:Consolas;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman","serif";
+	color:#1F497D;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+
+
+
+
+<div class="Section1">
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="text-align:center;line-height:normal" align="center"><b><span style="font-size:24.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Heap</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">by</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Jane
+Alam Jan</span></b></p>
+
+<p class="MsoNormal"><b><span style="font-size:16.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<b><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span></b>
+
+<p class="MsoNormal"><b><span style="font-size:16.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Introduction</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Often there are
+problems like the following</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><i><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We are given a list of </span></i><b><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span></i></b><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+elements; there are three types of operations.</span></i></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1)</span></i><i><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></i><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Insert
+an item into the list</span></i></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2)</span></i><i><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></i><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Find
+the minimum item in the list</span></i></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3)</span></i><i><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></i><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Remove
+the minimum item from the list</span></i></p>
+
+<h2>Idea 1</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">This problem doesn’t
+look that tough. We can easily store the list in an array or in a linked-list.
+But if we watch carefully, for adding an item, we can easily add the item in
+the end. But if we are asked to find the minimum item, or remove the minimum
+item, then we have to traverse the whole list.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So, if the array has </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+items and we are asked to find and remove the minimum item; then we will
+traverse the whole list. And thus, we need </span><b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+operations for the first deletion. Since one item has been removed, so, we need
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n
+– 1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+operations for the second deletion. So, if we delete </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+items, we need </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">n + (n – 1) + (n - 2) + ... 1 = n*(n+1)/2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+operations. Suppose that </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">n = 1000000</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and imagine that the
+computer performs </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">10<sup>9</sup></span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> operations per second;
+this idea will take around 500 seconds. This is way too large. So, if we delete
+</span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+times, the complexity of the idea will be </span><b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">O(n*k)</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.</span></p>
+
+<h2>Idea 2</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Another idea is, we can
+sort the array and can easily find and remove the minimum item, since it exists
+in the end. But still if we add items in the array, the array may lost its
+sorted property, and if we want to sort it after adding one or more items, then
+still the total time will be huge. For example you can sort the array in </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">O(n*log(n))</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+time, but if we add items </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">k</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> times, then the total
+time will be </span><b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">O(n*log(n)*k)</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, which can be huge.
+Say </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">k
+= 1000000</span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">, and </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">n = 1000000</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+then it’s easy to show that it will work worse than the previous idea.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So, both the ideas may
+not work, since they can perform worse in some cases. So, using them is risky
+sometimes. </span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Heap</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Heap is a tree-based
+data structure. We keep the numbers in the tree maintaining some beautiful
+properties. That’s why the time complexity to solve the given problem is
+sufficiently low. At first we will describe the idea, and we will show why it
+works well. And in second part we will describe the implementation idea,
+actually how to implement it easily.</span></p>
+
+<h2>Idea</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Before advancing, we
+should know about binary trees. A binary tree is a tree with the property that <b><i>each
+node can have at most two children.</i></b></span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<div align="center">
+
+<table class="MsoNormalTable" style="border-collapse:collapse" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:239.4pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="319">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/1.png" height="106" width="88"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Binary Tree</span></b></p>
+  </td>
+  <td style="width:239.4pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="319">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/2.png" height="106" width="76"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Not a binary
+  tree (3 children for root)</span></b></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now for heap, we will
+maintain three properties</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Each
+node can have at most two children (binary tree)</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+number containing by a node will be less than the numbers containing by its
+children</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">When
+adding a node in the tree, we will add it in the upper leftmost free position</span></p>
+
+<h2>Insertion</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Suppose we have the
+following numbers – </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">4, 5, 3, 2, 8, 9, 6</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+&nbsp;Now let’s make the heap, using these numbers. The steps are noted below.</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Initially
+there is no element, so, we can add </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> in the tree as
+the first node or root (fig 1).</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+we have </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+since the left most free position is the left child of node </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+so we add </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> as the left child of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+(property </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">) (fig 2).</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+we have </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+since the left most free position is the right child of node </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+so we add </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> as the right child of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+(fig 3.1). But </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> is less than </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+which violates property </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">. So, we will swap </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+and </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+to maintain property </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (fig 3.2).</span></p>
+
+<div align="center">
+
+<table class="MsoNormalTable" style="border-collapse:collapse" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/3.png" height="98" width="56"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 1</span></b></p>
+  </td>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/4.png" height="102" width="112"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 2</span></b></p>
+  </td>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/5.png" height="104" width="120"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 3.1</span></b></p>
+  </td>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/6.png" height="102" width="122"></span></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 3.2</span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">4)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+have </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+now; the leftmost free position is the left child of the node </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+We add </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+as the left child of </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (fig 4.1). But </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+can’t be child of </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (property </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">),
+so we swap </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">5</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (fig 4.2). Now,
+see that </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> can’t be child of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+so, we swap </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (fig 4.3).</span></p>
+
+<div align="center">
+
+<table class="MsoNormalTable" style="border-collapse:collapse" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/7.png" height="153" width="144"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 4.1</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/8.png" height="155" width="141"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 4.2</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/9.png" height="154" width="140"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 4.3</span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+leftmost free position for 8 is the right child of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+So, we add it here (fig 5).</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">6)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+leftmost free position for </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">9</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> is the left child of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+So, we add it here (fig 6).</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">7)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+leftmost free position for </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">6</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> is the right child of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">4</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+So, we add it here (fig 7).</span></p>
+
+<div align="center">
+
+<table class="MsoTableGrid" style="border-collapse:collapse;border:none" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/10.png" height="150" width="132"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 5</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/11.png" height="153" width="144"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 6</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/12.png" height="155" width="154"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 7</span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in">&nbsp;</p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">8)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Finally
+we have </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+The leftmost free position for </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> is the left child of </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+We place it here (fig 8.1). But since </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> can’t be a
+child of </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">; we swap </span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+and </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">5</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+Now is </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+is child of </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (fig 8.2). Still its violating rule </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+thus we swap </span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (fig 8.3).
+Again </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+can’t be child of </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, so we swap </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+and </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+(fig 8.4).</span></p>
+
+<div align="center">
+
+<table class="MsoTableGrid" style="border-collapse:collapse;border:none" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/13.png" height="196" width="149"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 8.1</span></b></p>
+  </td>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/14.png" height="197" width="149"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 8.2</span></b></p>
+  </td>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/15.png" height="195" width="149"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 8.3</span></b></p>
+  </td>
+  <td style="width:119.7pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="160">
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/16.png" height="190" width="149"></span></p>
+  <p class="MsoNoSpacing" style="text-align:center" align="center"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 8.4</span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in">&nbsp;</p>
+
+<h2>Cost for Insertion</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now we are inserting
+numbers, but we may need some swap operations to maintain the heap properties.
+In worst case how many swap operations are needed? Before answering the
+question we should see the following part.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">For convenience we
+partition the tree into some levels. </span></p>
+
+<p class="MsoNoSpacing" style="text-align:center" align="center"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/17.png" height="140" width="216"></span></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Partitioning
+the tree into levels</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">It’s clear that in
+level 0, there can be only one node, level 1 can have two nodes, level 2 can
+have 4 nodes and level 3 can have 8 nodes (though in the picture, there is only
+one node in level 3, but we can surely add 7 more nodes here). So, we can
+surely say,</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Level
+0 contains at most 1 node = 2<sup>0</sup> node.</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Level
+1 contains at most 2 nodes = 2<sup>1</sup> nodes.</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Level
+2 contains at most 4 nodes = 2<sup>2</sup> nodes.</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">Level
+3 contains at most 8 nodes = 2<sup>3</sup> nodes.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">...</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">Level n contains at most 2<sup>n</sup> nodes.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Three important facts
+should be noted here. They are</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1.</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+a node (other than the root) is in level </span><b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, its parent is
+surely in level </span><b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">k - 1</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2.</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We
+can’t add an item in level </span><b><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> unless level is </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">k - 1</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+full.</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3.</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+a node is added in level </span><b><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, then at most </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+swaps are need.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Actually the way we
+have built the tree, we are sure that fact 1 and 2 will always be maintained.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">For the 3<sup>rd</sup>
+fact, imagine that we are trying to add a new item in level </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">3</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+And in worst case, we would have to swap it with its parent which is in level </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+After that we may need another swap with the current parent which lies in level
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">1</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+And finally we may need another swap with its current parent which lies in
+level 0. So, at most 3 swaps are needed (see the 8<sup>th</sup> iteration of
+the heap building example given above).</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now if we add an item
+in a heap in level 4, then at most 4 swaps are needed. Because if a swap is
+possible, after 1 swap the node will be in level 3, after another possible swap
+it will go to level 2, and if another swap is possible, then it will surely go
+to level 1, and finally, if another swap is possible then it will go to level
+0. After that no swaps can be needed. So, at most 4 swaps are needed. So, fact
+3 is also correct.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now suppose, there are </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+nodes in the tree, then what would be the highest level for the heap?</span></p>
+
+<p class="MsoNoSpacing"><b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;"> = 1; highest level is 0, <b><span style="color:#548DD4">floor(</span></b><span style="color:#C00000">log(</span>n<span style="color:#C00000">)</span><b><span style="color:#548DD4">)</span></b> = 0</span></p>
+
+<p class="MsoNoSpacing"><b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;"> = 2, 3; highest level is 1,
+<b><span style="color:#548DD4">floor(</span></b><span style="color:#C00000">log(</span>n<span style="color:#C00000">)</span><b><span style="color:#548DD4">)</span></b> = 1</span></p>
+
+<p class="MsoNoSpacing"><b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;"> = 4 to 7; highest level is
+2, <b><span style="color:#548DD4">floor(</span></b><span style="color:#C00000">log(</span>n<span style="color:#C00000">)</span><b><span style="color:#548DD4">)</span></b> = 2</span></p>
+
+<p class="MsoNoSpacing"><b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;"> = 8 to 15; highest level is
+3, <b><span style="color:#548DD4">floor(</span></b><span style="color:#C00000">log(</span>n<span style="color:#C00000">)</span><b><span style="color:#548DD4">)</span></b> = 3</span></p>
+
+<p class="MsoNoSpacing"><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">...</span></p>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">So, for any <b>n</b>; highest level is <b><span style="color:#548DD4">floor(</span></b><span style="color:#C00000">log<sub> </sub>(</span>n<span style="color:#C00000">)</span><b><span style="color:#548DD4">)</span></b></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[Here, </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#548DD4">floor</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+function returns the integer part of a number, for example, </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">floor(1.99)=1,
+floor(7.00)=7,</span><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;"> the base for the </span><b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">log</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+is </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">2</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">].</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">For a tree which has </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+nodes, has </span><b><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (</span><b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">=<span style="color:#548DD4">floor(</span></span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">log<sub>
+</sub>(</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n<span style="color:#C00000">)</span><b><span style="color:#548DD4">)</span></b></span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">)
+as the highest level, so, if we add a new item in the tree, if the </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">th
+level is not full, then in worst case we need </span><b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+operations. If the </span><b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">th level is full, then
+the new item will be added in (</span><b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">k+1</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">)th
+level, so, in worst case we need </span><b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">k+1</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+operations. For simplicity, we assume that, in worst case we need </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">log(n)</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+operations in both cases. So, the complexity for adding an item is </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">O(log(n))</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+Thus, the complexity for adding </span><b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">k</span></b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> items is </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">O(k*logn)</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.</span></p>
+
+<h2>Finding Minimum Item</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If we see the tree, we
+see that the root will always be the minimum item in the tree. Since we know
+that for heap, every child will be greater than its parent. So, inductively
+it’s clear that the root will contain the minimum number; otherwise we have not
+maintained the heap property.</span></p>
+
+<h2>Cost for Finding Minimum Item</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Since the root can be
+found without any calculations. So, the complexity is O(1).</span></p>
+
+<span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br style="page-break-before:always" clear="all">
+</span>
+
+<p class="MsoNormal"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<h2>Removing Minimum Item</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So far we have seen
+some efficient ideas to add an item or finding the minimum item in the tree.
+Now we want to remove the minimum item from the tree efficiently.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Let’s delete 3 minimum
+elements from the tree in figure 8.4. The steps are noted below.</span></p>
+
+<p class="MsoListParagraph" style="text-align:justify;text-indent:-.25in"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+root contains the minimum element, so 1 is the minimum element. At first we
+remove the bottom rightmost element (or you can say the last element) from the
+tree and copy its content to the root. So, we remove 1 from the tree and copy 5
+to root (fig 9.1).&nbsp;</span></p>
+
+<div align="center">
+
+<table class="MsoTableGrid" style="border-collapse:collapse;border:none" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><img src="traning%20Jan%27s%20LightOJ_files/18.png" height="150" width="140"></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 9.1</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><img src="traning%20Jan%27s%20LightOJ_files/19.png" height="150" width="140"></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 9.2</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><img src="traning%20Jan%27s%20LightOJ_files/20.png" height="148" width="138"></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 9.3</span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in"><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">2)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">As
+we can see that the tree has lost its heap property 2 (that is the value of a
+node should be less than the value of its children). So, from 2 and 4, we pick
+the minimum one, that is 2, and we swap it with 5 (fig 9.2).</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in"><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">3)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Still
+the tree is not a heap since, 3 is less than 5, this we swap them (fig 9.3).
+Now it’s a heap.</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in"><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">4)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Let’s
+delete the next minimum number, that is 2, so, we can do the same procedure
+that is we will delete 2 and we replace it by 6 (fig 10.1).</span></p>
+
+<div align="center">
+
+<table class="MsoTableGrid" style="margin-left:.5in;border-collapse:collapse;border:none" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/21.png" height="147" width="136"></span></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 10.1</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/22.png" height="148" width="134"></span></b></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 10.2</span></b></p>
+  </td>
+  <td style="width:159.6pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="213">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/23.png" height="150" width="136"></span></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 10.3</span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in"><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Since
+it's not a heap, we swap 6 with its minimum child that is 3 (fig 10.2).</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in"><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">6)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Still
+there is a conflict, because 5 is smaller than 6, thus we swap 6 and 5 (fig
+10.3). And it’s a heap.</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in"><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">7)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Let's
+delete the current minimum that is 3. So, we replace 3 by 9 (fig 11.1).</span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in"><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">8)</span><span style="font-size:7.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">And
+swap 9 with its minimum child 4, and we get a heap (fig 11.2).</span></p>
+
+<div align="center">
+
+<table class="MsoTableGrid" style="margin-left:.5in;border-collapse:collapse;border:none" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="width:239.4pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="319">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/24.png" height="148" width="136"></span></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 11.1</span></b></p>
+  </td>
+  <td style="width:239.4pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="319">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/25.png" height="148" width="135"></span></b></p>
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><b><span style="font-size:12.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure 11.2</span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<h2>Cost for Deleting Minimum Item</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">As we can see that, for
+a deletion we need to swap some elements. Let this number be <b>K</b>. Each
+time after a swap we can see that the number goes to the next level, that means
+the level is increased by 1, and since the number of levels is </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">log(n)</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+&nbsp;So, the complexity for the deletion of the minimum number would be </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">O(log(n))</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.</span></p>
+
+<h2>The Way to Code</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So, we now want to code
+this structure. At first we number the nodes in the following way.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center" align="center"><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="traning%20Jan%27s%20LightOJ_files/26.png" height="197" width="151"></span></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Figure:
+12</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If we see carefully,
+it's clear that if a node’s index is </span><b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">p</span></b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, its left
+child’s index is </span><b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">2*p</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, and its right child’s
+index is </span><b><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">2*p+1</span></b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">. So, we will use an array to store the
+numbers. For example, for fig 12 the array will be:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center" align="center"><b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">index&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 1 2 3 4 5 6 7 8</span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">content&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 1 2 4 3 8 9 6 5</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">For example, in index
+3, we kept 4, and, so, its left child will be the number in index 2*3=6, and
+the right child will be the in index 2*3+1=7. As we can see that in index 6, we
+have 9, and in index 7 we have 6, which are the left and right child of 4
+respectively.</span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">And again, we can say
+that if a node’s index is </span><b><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">p</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, its parent’s index
+will be </span><b><span style="font-size:12.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">p/2 </span></b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(integer division). For example, in
+index 5 we have 8, so, its parent’s index will be 5/2=2 which is 2, and in
+index 2 there is 2, which is 8’s parent.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue">#include</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+<span style="color:#A31515">&lt;stdio.h&gt;</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue">#include</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+<span style="color:#A31515">&lt;algorithm&gt;</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue">using</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+<span style="color:blue">namespace</span> <span style="color:#010001">std</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue">const</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+<span style="color:blue">int</span> <span style="color:#010001">NN</span> =
+100; <span style="color:green">// heap size</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue">struct</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+<span style="color:#010001">heap</span> {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">myarray</span>[<span style="color:#010001">NN</span>+1]; <span style="color:green">// myarray to
+store the numbers as heap, 1 indexed</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">n</span>;&nbsp;
+<span style="color:green">// the number of nodes in my array</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">heap</span>() { <span style="color:green">//
+constructor</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">clear</span>(); <span style="color:green">// we
+clear the heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:blue">void</span> <span style="color:#010001">clear</span>()
+{ <span style="color:green">// initialize the heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">n</span> = 0; <span style="color:green">//
+initially there are no nodes in the heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:blue">void</span> <span style="color:#010001">insert</span>(
+<span style="color:blue">int</span> <span style="color:#010001">K</span> ) { <span style="color:green">// inserting an element K in the heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">if</span>( <span style="color:#010001">n</span> == <span style="color:#010001">NN</span> ) { <span style="color:green">// the heap is
+full</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">printf</span>(<span style="color:#A31515">"cannot
+insert any more element, the heap is full\n"</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">return</span>;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+++<span style="color:#010001">n</span>; <span style="color:green">// so, we
+have a new element, we increased n before adding</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:green">// the element because we start from index 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">myarray</span>[<span style="color:#010001">n</span>]
+= <span style="color:#010001">K</span>; <span style="color:green">// inserted
+the element at the rightmost position</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">p</span> = <span style="color:#010001">n</span>; <span style="color:green">// for keeping the
+current position</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">while</span>( <span style="color:#010001">p</span>
+&gt; 1 ) { <span style="color:green">// p = 1 means we are on the root, and its
+a heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">pr</span> = <span style="color:#010001">p</span> / 2; <span style="color:green">// pr is the
+parent of p</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">if</span>( <span style="color:#010001">myarray</span>[<span style="color:#010001">pr</span>] &gt; <span style="color:#010001">myarray</span>[<span style="color:#010001">p</span>] ) { <span style="color:green">// parent is
+greater than child</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">swap</span>( <span style="color:#010001">myarray</span>[<span style="color:#010001">pr</span>], <span style="color:#010001">myarray</span>[<span style="color:#010001">p</span>] );</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">p</span> = <span style="color:#010001">pr</span>; <span style="color:green">// now the new position of the current element is pr</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">else</span> <span style="color:blue">break</span>; <span style="color:green">// otherwise its a heap, so we can stop here</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">remove</span>()
+{ <span style="color:green">// removing the minimum element from the heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">if</span>( <span style="color:#010001">n</span> == 0 )
+{ <span style="color:green">// is the heap is empty</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">printf</span>(<span style="color:#A31515">"The
+heap is empty, cannot delete.\n"</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">return</span> -1;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">K</span> = <span style="color:#010001">myarray</span>[1]; <span style="color:green">// first
+element in the heap is the minimum</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">myarray</span>[1] = <span style="color:#010001">myarray</span>[<span style="color:#010001">n</span>]; <span style="color:green">// brought the last
+element in 1st position</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">n</span>--; <span style="color:green">// as we
+removed one element, now we need to maintain the heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">p</span> = 1; <span style="color:green">// as we moved the rightmost element in index 1</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">while</span>( 2 * <span style="color:#010001">p</span>
+&lt;= <span style="color:#010001">n</span> ) { <span style="color:green">//
+means p has at least one child, if 2*p &gt; n</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:green">// we are sure that p is in the last level</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">int</span> <span style="color:#010001">ch</span> = 2 *
+<span style="color:#010001">p</span>; <span style="color:green">// contains the
+index of the child</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">if</span>( 2 * <span style="color:#010001">p</span> +
+1 &lt;= <span style="color:#010001">n</span> ) { <span style="color:green">//
+right child exists</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">if</span>( <span style="color:#010001">myarray</span>[<span style="color:#010001">ch</span>] &gt; <span style="color:#010001">myarray</span>[<span style="color:#010001">ch</span>+1] ) <span style="color:green">// right child
+is smaller</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:green">// than left child</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">ch</span>++; <span style="color:green">// ch
+contains the index of the right child</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">if</span>( <span style="color:#010001">myarray</span>[<span style="color:#010001">p</span>] &gt; <span style="color:#010001">myarray</span>[<span style="color:#010001">ch</span>] ) { <span style="color:green">// so, current
+node is larger</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:green">// than its child</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">swap</span>( <span style="color:#010001">myarray</span>[<span style="color:#010001">p</span>], <span style="color:#010001">myarray</span>[<span style="color:#010001">ch</span>] );</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">p</span> = <span style="color:#010001">ch</span>; <span style="color:green">// new position of the current element</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">else</span> <span style="color:blue">break</span>; <span style="color:green">//current node is smaller than its children, so heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">return</span> <span style="color:#010001">K</span>; <span style="color:green">// as we stored the minimum element in K</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:blue">void</span> <span style="color:#010001">print</span>()
+{ <span style="color:green">// printing the heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">printf</span>(<span style="color:#A31515">"Number
+of elements: %d\n"</span>, <span style="color:#010001">n</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:blue">for</span>( <span style="color:blue">int</span> <span style="color:#010001">i</span> = 1; <span style="color:#010001">i</span> &lt;= <span style="color:#010001">n</span>; <span style="color:#010001">i</span>++ ) <span style="color:#010001">printf</span>(<span style="color:#A31515">"%d "</span>,
+<span style="color:#010001">myarray</span>[<span style="color:#010001">i</span>]);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">printf</span>(<span style="color:#A31515">"\n"</span>);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">};</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue">int</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+<span style="color:#010001">main</span>() {</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">heap</span> <span style="color:#010001">A</span>; <span style="color:green">// created a heap</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:green">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">clear</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:green">// testing</span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(4);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(5);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(3);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(2);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(8);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(9);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(6);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">insert</span>(1);</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">printf</span>(<span style="color:#A31515">"Deleting
+%d\n"</span>, <span style="color:#010001">A</span>.<span style="color:
+#010001">remove</span>());</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">printf</span>(<span style="color:#A31515">"Deleting
+%d\n"</span>, <span style="color:#010001">A</span>.<span style="color:
+#010001">remove</span>());</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">printf</span>(<span style="color:#A31515">"Deleting
+%d\n"</span>, <span style="color:#010001">A</span>.<span style="color:
+#010001">remove</span>());</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:#010001">A</span>.<span style="color:#010001">print</span>();</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;
+<span style="color:blue">return</span> 0;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">}</span></p>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<h2>Applications</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">We use heap for
+Dijkstra. And it’s quite use useful for some problems. And the same idea is
+used for Segment trees. And it’s a compact structure that means all the
+elements are saved consecutively in the array and no position is wasted (we can
+forget 0<sup>th</sup> index).</span></p>
+
+<h2>Related Problems</h2>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><a href="http://lightoj.com/volume_showproblem.php?problem=1293">1293 – Document Analyzer</a></span></p>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:12.0pt;text-align:justify">&nbsp;</p>
+
+</div>
+
+
+
+
+				<hr style="color: #717171; height: .5px;">
+
+				<div id="problem_setter">
+					Author: Jane Alam Jan				</div>
+			</div>
+		</div>
+<div class="bottomDiv" align="center">
+	<table width="100%">
+		<tbody><tr>
+			<td width="50%">
+				<div class="midMessage">
+					Developed and Maintained by
+					<br><b>JANE ALAM JAN</b>
+				</div>
+
+			</td>
+			<td width="50%">
+				<div class="midMessage">
+					Copyright © 2012
+					<br><b>LightOJ, Jane Alam Jan</b>
+				</div>
+
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+	
+
+</body></html>

@@ -1,0 +1,14 @@
+\a :  audiable alert
+\b :  back space
+\f :  form feed
+\n :  new line
+\r :  carriage return
+\t :  horijontal tab
+\v :  vertical tab
+\0 :  null
+\N :  octal constant
+\xN:  hexadecimal constant (N nj hexadecimal gvb)
+\' :  singal quote
+\" :  double quote
+\? :  question mark
+\\ :  backslash

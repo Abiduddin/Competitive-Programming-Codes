@@ -1,0 +1,1038 @@
+<html><head>
+		<title>Jan's LightOJ</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="Traning%204Jan%27s%20LightOJ_files/style.css">
+	</head>
+
+	<body lang="EN-US">
+<style>
+div.tempMessage {
+  float: left;
+  font-size: 30;
+  margin-top: 10px;
+  margin-left: 300px;
+  position: absolute;
+  border: 2px solid white;
+  background: yellow;
+  border-radius: 5px;
+  padding: 2px;
+}
+div.tempMessage a {
+  text-decoration: underline;
+  color: red;
+}
+</style>
+<div class="topDiv">
+			<img src="Traning%204Jan%27s%20LightOJ_files/main.png" class="topImage" style="float: left;">
+                <!--<div class="tempMessage"><a href="http://lightoj.com/lightojv2/contest/215/problems" target=_blank>ACM ICPC Dhaka Regionals Online Preliminary Contest is scheduled here.</a></div>!-->
+			<div class="topMenuMessage" style="display: block; float: right; padding: 50 5 0 0;">
+				Server Time:
+				<a class="top_link" target="_blank" href="http://www.timeanddate.com/worldclock/fixedtime.html?iso=20150918T024919">
+					Fri Sep 18, 2015 8:49 am				</a>
+			</div>
+		</div>
+		<div class="topMenu" align="center">
+			<table width="100%">
+				<tbody><tr>
+					<td width="10%">
+						<div class="topMenuMessage">
+							&nbsp;<a class="top_link" href="http://lightoj.com/index.php">
+								Home
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/volume_problemset.php">
+								Volume
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/contest_index.php">
+								Contest
+							</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/article_showcategory.php">Training</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/forum_index.php">Community</a>
+						</div>
+					</td>
+					<td width="10%">
+						<div class="topMenuMessage">
+							<a class="top_link" href="http://lightoj.com/credits_index.php">Credits</a>
+						</div>
+					</td>
+					<td align="right" width="60%">
+						<div class="topMenuMessage">
+							Welcome
+								<a class="top_link" href="http://lightoj.com/index_edituser.php">
+									md. abid								</a>
+							(<a class="top_link" href="http://lightoj.com/login_logout.php">
+								logout
+							</a>)&nbsp;
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+		<div id="wrapper">
+			<div id="problem">
+				<div id="problem_name">
+					Prime Factorization				</div>
+				<div style="border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;" align="center">
+					<table id="mytable" style="width:110;padding: 5 0 5 0;" cellspacing="0">
+						<tbody><tr><td class="two" style="border-top: 1px solid #C1DAD7;border-left: 1px solid #C1DAD7;" width="100">
+							<a class="user_link" href="http://lightoj.com/article_show.php?article=1002&amp;language=english&amp;type=pdf">
+								PDF (English)							</a>
+						</td>
+					</tr></tbody></table>
+				</div>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Generator" content="Microsoft Word 12 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:Consolas;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:#1F497D;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:Consolas;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman","serif";
+	color:#1F497D;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Courier New";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.apple-style-span
+	{mso-style-name:apple-style-span;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+
+
+
+
+<div class="Section1">
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Introduction</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sometimes
+we need to prime factorize numbers. So, what is prime factorization? Actually
+prime factorization means finding the prime factors of a number. That means the
+primes that divide the number, should be listed and how many times a prime
+divides the number should also be listed. For example,</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">40
+= 2<sup>3</sup> * 5</span></i></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">120
+= 2<sup>3</sup> * 3 * 5</span></i></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">147
+= 3 * 7<sup>2</sup></span></i></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">121
+= 11<sup>2</sup></span></i></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><i><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">4021920
+= 2<sup>5</sup> * 3<sup>3</sup> * 5 * 7<sup>2</sup> * 19</span></i></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
+line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now,
+how to generate the prime factorization of a number? So, obviously the first
+task is - we have to generate primes. You can read the paper for "</span><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sieve of
+Eratosthenes</span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">"
+to know how to find primes. From now on, we will think that we have an array
+named </span><b><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">prime[]</span></b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> which contains
+all the primes. So, </span><span style="font-size:12.0pt;font-family:&quot;Courier New&quot;">prime[0]
+= 2, prime [1] = 3, prime [2] = 5</span><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, ...</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 1</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+first idea that comes into mind is, we can check all the primes and try to
+divide the number. If we can divide the number by a prime, we will try to
+divide as many times as we can. We will continue our work until the number
+becomes 1. For example, we want to prime factorize 40. </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">At
+first, we take an empty list; it will contain the primes we have used for
+factorization (that's how we can find the primes we have used). The steps are
+given below. Initially we have</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">40<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+(empty)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 1)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">40
+is divisible by 2 (the 1<sup>st</sup> prime), so, we divide 40 by 2 (and get
+20) and add 2 in the list, we get</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">20<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+<span style="color:#C00000">2</span></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 2)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">20
+is divisible by 2, so, we divide 20 by 2 (and get 10) and add 2 in the list, we
+get</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">10<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+<span style="color:#C00000">2</span> <span style="color:#00B050">2</span></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 3)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">10
+is divisible by 2, so, we divide 10 by 2 (and get 5) and add 2 in the list, we
+get</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">5<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+<span style="color:#C00000">2</span> <span style="color:#00B050">2 </span><span style="color:#7030A0">2</span></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 4)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5
+is not divisible by 3 (the 2<sup>nd</sup> prime), so the list remains unchanged</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 5)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">5
+is divisible by 5 (the 3<sup>rd</sup> prime), so, we divide 5 by 5 (and get 1)
+and add 5 in the list, we get</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">1<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+<span style="color:#C00000">2</span> <span style="color:#00B050">2 </span><span style="color:#7030A0">2 </span><span style="color:#F79646">5</span></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+if we go further it will be unnecessary, because 1 can't be factorized further.
+So, we are sure that 40 = 2 * 2 * 2 * 5 = 2<sup>3</sup> * 5. This way we can
+prime factorize any number.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+following code implements the same idea as described.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="border:none;padding:0in"><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">List</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#686868;background:white">128</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">]</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#666666;background:white">// saves the List</span></i></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#666666;background:white">// saves the size of
+List</span></i></span><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:blue;background:white">void</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">primeFactorize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">n</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">{</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; listSize</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:navy;
+background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#686868;
+background:white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#666666;
+background:white">// Initially the List is empty, we denote that size = 0</span></i></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">for(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:blue;
+background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:navy;
+background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#686868;
+background:white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:navy;
+background:white">&lt;=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">n</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#000040;
+background:white">++</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">{</span></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">if(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">n</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#000040;
+background:white">%</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:navy;
+background:white">==</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#686868;
+background:white">0</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">{</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#666666;
+background:white">// So, n is a multiple of the ith prime</span></i></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#666666;
+background:white">// So, we continue dividing n by prime[i] as long as possible</span></i></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">while(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">n</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#000040;
+background:white">%</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:navy;
+background:white">==</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#686868;
+background:white">0</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">{</span></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; n</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#000040;background:white">/</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">]</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#666666;background:white">// we have divided n
+by prime[i]</span></i></span><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; List</span></span><span class="apple-style-span"><span style="font-size:
+10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;;color:black;background:white">listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">]</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#666666;background:white">// added the ith
+prime in the list</span></i></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#000040;
+background:white">++</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#666666;
+background:white">// added a prime, so, size should be increased</span></i></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">}</span></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">}</span></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">}</span></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:#009900;background:white">}</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">main</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">()</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">{</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; primeFactorize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#686868;background:white">40</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:#009900;background:white">)</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">for(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:blue;
+background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:navy;
+background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#686868;
+background:white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:navy;
+background:white">&lt;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#000040;
+background:white">++</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#666666;
+background:white">// traverse the List array</span></i></span><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#000066;
+background:white">printf</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">(</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#D00000;
+background:white">"%d "</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">, List</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">])</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#009900;
+background:white">return</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:black;
+background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#686868;
+background:white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:teal;
+background:white">;</span></span><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;;color:#009900;background:white">}</span></span></p>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">If
+we analyze the code a bit, we will find that, the condition should be </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">n
+!= 1</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+but here, the condition is given as </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;;color:#C00000">prime[i] &lt;= n</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+Do they have any difference?</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Idea 2</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+idea described in the previous section is not quite good, since if a prime
+number is given, say the 10000<sup>th</sup> prime, we have to check all the
+primes up to it and then we can find the factorization. For example, if we want
+to find the prime factorization of 19 (the 9<sup>th</sup> prime), then the code
+will try to divide 19 by 2, then 3, 5, 7, 11, 13, 15, 17, and finally 19. So,
+only 19 divides 19, then we will find the prime factorization of 19. So, it
+takes 9 operations.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+better idea is check primes up to sqrt(</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">n</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">). This idea is
+described in the paper for "<b>Sieve of </b></span><b><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Eratosthenes</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">".
+As we have stated there - an integer </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">n</span><span style="font-size:
+12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, which is not a
+prime, will have a divisor (a prime divisor, too) less than or equal to sqrt(</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">).
+So, this way can divide </span><b><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> by its prime divisor,
+thus reducing it. But if we follow this way, can there be any problems?</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">At
+first, we try to factorize 40. The integer part (or floor) of sqrt(40) = 6. So,
+we will take primes up to 6. Now see that the largest prime used for 40 is 5
+(in <b>Idea 1</b>). So, we will have the same steps as in <b>Idea 1</b>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Now
+we try to factorize 114. The integer part (or floor) of sqrt(114) = 10. So, we
+will take primes up to 10. Initially we have</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">114<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+(empty)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 1)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">114
+is divisible by 2, so, we divide 114 by 2 (and get 57) and add 2 in the list,
+we get</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">57<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+<span style="color:#C00000">2</span></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 2)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">57
+is divisible by 3, so, we divide 57 by 3 (and get 19) and add 3 in the list, we
+get</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">19<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+<span style="color:#C00000">2</span> <span style="color:#00B0F0">3</span></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#00B050">Step 3)</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">19
+is not divisible by 5 or 7. We will stop here, because the next prime is 11,
+but we assumed that we will check primes up to 10. So, we are sure that 19
+doesn't have any prime divisor less than or equal to 10. So, as we have
+mentioned already, 19 must be a prime. Thus we add 19 in the list.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;;color:#5C41FD">1<br>
+</span></b><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">List:
+<span style="color:#C00000">2</span> <span style="color:#00B0F0">3</span> <span style="color:#FFC000">19</span></span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">So,
+to find the prime factorization of a given number, this method will check
+primes up to sqrt(</span><b><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">), which is far better
+than the previous one. So, the necessary prime numbers to factorize </span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+is the primes numbers less than or equal to sqrt(</span><b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">n</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">).
+So, when we generate primes, we can only generate the important primes checking
+the limit of the test data. For example if the maximum number in the input is
+1000000, we need to generate primes up to sqrt(1000000) = 1000. So, primes up
+to 1000 are required only!</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">The
+following code implements the idea, which we have just described.</span></p>
+
+<div style="border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none;border:none;padding:0in"><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">List</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">128</span></span><span class="apple-style-span"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:white">]</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:teal;background:white">;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// saves the List</span></i></span><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// saves the size of List</span></i></span><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;color:blue;background:white">void</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">primeFactorize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">n</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">)</span></span><span class="apple-converted-space"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">{</span></span><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; listSize</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// Initially the List is empty, we denote that size = 0</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">sqrtN</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#000066;background:
+white">sqrt</span></span><span class="apple-style-span"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:white">(</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">n</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">)</span></span><span class="apple-converted-space"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">)</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// find the sqrt of the number</span></i></span><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">for(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">&lt;=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">sqrtN</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#000040;background:
+white">++</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">{</span></span><span class="apple-converted-space"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#666666;background:white">// we check up to the sqrt</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">if(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">n</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#000040;background:white">%</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">==</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">0</span></span><span class="apple-converted-space"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">{</span></span><span class="apple-converted-space"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#666666;background:white">// n is multiple of prime[i]</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// So, we continue dividing n by prime[i] as long as possible</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">while(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">n</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#000040;background:white">%</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">==</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">0</span></span><span class="apple-converted-space"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">{</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; n</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#000040;background:white">/</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">]</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// we have divided n by prime[i]</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; List</span></span><span class="apple-style-span"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">prime</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">]</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// added the ith prime in the list</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#000040;background:
+white">++</span></span><span class="apple-style-span"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// added a prime, so, size should be increased</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">}</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// we can add some optimization by updating sqrtN here, since n</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// is decreased. think why it's important and how it can be added</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">}</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">}</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">if(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">n</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:navy;background:white">&gt;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">1</span></span><span class="apple-converted-space"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">{</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// n is greater than 1, so we are sure that this n is a prime</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; List</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">]</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">n</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#666666;background:white">// added n (the prime) in the list</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp; listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#000040;background:white">++</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// increased the size of the list</span></i></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">}</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;color:#009900;background:white">}</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">main</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">()</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">{</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; primeFactorize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">114</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">)</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">for(</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:blue;background:white">int</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">=</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#686868;background:
+white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:navy;background:white">&lt;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">listSize</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:teal;background:white">;</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#000040;background:
+white">++</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">)</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#666666;background:
+white">// traverse the List array</span></i></span><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#000066;background:
+white">printf</span></span><span class="apple-style-span"><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:white">(</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#D00000;background:white">"%d "</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:black;background:white">, List</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">[</span></span><span class="apple-style-span"><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;color:black;background:white">i</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#009900;background:white">])</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+<span class="apple-style-span">&nbsp; &nbsp;</span><span class="apple-converted-space">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:#009900;background:
+white">return</span></span><span class="apple-converted-space"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white">&nbsp;</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+color:#686868;background:white">0</span></span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:teal;background:white">;</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:black;background:white"><br>
+</span><span class="apple-style-span"><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;color:#009900;background:white">}</span></span></p>
+
+</div>
+
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in">
+
+<h1>Discussion</h1>
+
+</div>
+
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">How
+many primes do we generate? We need the primes to the sqrt(max number in the
+input). But there can be a problem. In the above algorithm we have used the
+condition </span><b><span style="font-size:10.0pt;line-height:115%;font-family:
+&quot;Courier New&quot;">prime[i] &lt;= sqrtN</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">. So, when </span><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;">prime[i]</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+is <b>greater than</b> </span><b><span style="font-size:10.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">sqrtN</span></b><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> then the loop will
+terminate, but if we generate primes exactly up to </span><b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Courier New&quot;">sqrtN</span></b><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">,
+a problem may occur. For example, say we are about to prime factorize 29, and
+so, we have generated primes 2, 3, 5 only (up to integer part of sqrt(29) = 5).
+So, </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">prime[0]
+= 2, prime[1] = 3</span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> and </span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">prime[2] = 5</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">.
+Now in the loop when </span><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Courier New&quot;">i</span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> becomes 2, so </span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">prime[i] =
+5</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+which is less than or equal to square root of 29 and thus the loop will move
+further. But in the next turn, </span><span style="font-size:12.0pt;line-height:
+115%;font-family:&quot;Courier New&quot;">i</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> increases and becomes
+3. But as we have generated only 3 primes (</span><span style="font-size:12.0pt;
+line-height:115%;font-family:&quot;Courier New&quot;">prime[0 to 2]</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">),
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Courier New&quot;">prime[3]
+</span><span style="font-size:12.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(invalid
+value) will be compared to sqrt(29). So, when generating primes, be sure that
+at least one extra prime is generated for safety.</span></p>
+
+</div>
+
+
+
+
+				<hr style="color: #717171; height: .5px;">
+
+				<div id="problem_setter">
+					Author: Jane Alam Jan				</div>
+			</div>
+		</div>
+<div class="bottomDiv" align="center">
+	<table width="100%">
+		<tbody><tr>
+			<td width="50%">
+				<div class="midMessage">
+					Developed and Maintained by
+					<br><b>JANE ALAM JAN</b>
+				</div>
+
+			</td>
+			<td width="50%">
+				<div class="midMessage">
+					Copyright © 2012
+					<br><b>LightOJ, Jane Alam Jan</b>
+				</div>
+
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+	
+
+</body></html>

@@ -1,0 +1,4 @@
+
+#.   printf(cost == 0? "stay home\n" : "%d\n", cost);
+
+#. divide and Conquer uva10070

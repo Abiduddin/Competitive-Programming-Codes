@@ -1,0 +1,26 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+
+public class r2 {
+	public static void main(String args[]){
+		Scanner ab=new Scanner(System.in);
+		BigInteger b2,b1;
+		
+		while(ab.hasNext()){
+			b2=ab.nextBigInteger();
+			
+			if(b2.equals(BigInteger.valueOf(1))){
+				System.out.println("1");
+			}
+			else
+			{
+				b1=b2.subtract(BigInteger.valueOf(2));
+				b2=b2.add(b1);
+				System.out.println(b2);
+			}
+
+			
+		}
+	}
+}

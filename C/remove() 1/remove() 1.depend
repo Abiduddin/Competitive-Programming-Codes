@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1457447693 source:e:\work place\c\remove() 1\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+
